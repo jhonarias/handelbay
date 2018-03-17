@@ -120,38 +120,6 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-right li a {
   padding: 7px 12px;
 }
 
-.no-m-r {
-  margin-right: 0;
-}
-
-.no-m-l {
-  margin-left: 0;
-}
-
-.no-m-t {
-  margin-top: 0;
-}
-
-.no-m-b {
-  margin-bottom: 0;
-}
-
-.no-p-r {
-  padding-right: 0;
-}
-
-.no-p-l {
-  padding-left: 0;
-}
-
-.no-p-t {
-  padding-top: 0;
-}
-
-.no-p-b {
-  padding-bottom: 0;
-}
-
 /*  PÁGINA POR QUÉ HANDELBAY */
 
 /* == HANDELBAY INNOVATIVE == */
@@ -221,7 +189,7 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-right li a {
 #handelbay-background-curva-bottom {
   background-image: url("../images/handelbay_img/handelbay_fondo_porque.png");
   height: 90px;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #handelbay-background-curva-bottom {
@@ -1600,6 +1568,49 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-right li a {
 }
 /*  == End Que hacemos == */
 
+/*  == IGNITE == */
+
+#ignite{
+  margin-top: 6em;
+}
+
+#ignite .title-ignite{
+  margin-bottom: 40px;
+  padding: 0 40px;
+}
+
+#ignite .tecno-ignite{
+  padding-bottom: 25px;
+  border-left: 1px solid #F9BAC5;
+  border-right: 1px solid #F9BAC5;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+#ignite .tecno-ignite h1{
+  font-family: "Gotham-Bold";
+  color: #EC0D34;
+  text-align: center;
+  padding: 70px 30px 40px 30px;
+  border-left: 3px solid #EC0D34;
+  border-right: 3px solid #EC0D34;
+  font-size: 45px;
+}
+
+#ignite .tecno-ignite p{
+  padding: 0 30px;
+  margin: 0;
+}
+
+#ignite .title-ignite img{
+  width: 100%;
+}
+
+#ignite .no-border-ignite .tecno-ignite, #ignite .no-border-ignite .tecno-ignite h1{
+  border-right: 0;
+}
+/*  == END IGNITE == */
+
 /* == FOOTER == */
 footer {
   background-image: url("../images/handelbay_img/handelbay_fondo_footer.png");
@@ -1854,6 +1865,19 @@ footer .handelbay-ignite a {
 
   /* END TARIFAS */
 
+  #ignite .tecno-ignite h1{
+    font-size: 35px;
+  }
+
+  #ignite .tecno-ignite h1, #ignite .tecno-ignite p {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  #what_do_we_do{
+    background-position: calc(100% - -18em) center;
+  }
+
   /* Footer */
 
   footer .handelbay-form-subscribe {
@@ -1957,6 +1981,14 @@ footer .handelbay-ignite a {
 
   /* end Tarifas*/
 
+  #ignite .tecno-ignite{
+    margin-bottom: 0px;
+  }
+
+  #ignite {
+    margin-top: 3em;
+  }
+
   /* Footer */
 
   footer .handelbay-form-subscribe .title > h1 {
@@ -1982,3 +2014,5 @@ footer .handelbay-ignite a {
     width: 900px;
   }
 }
+
+

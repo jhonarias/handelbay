@@ -93,17 +93,17 @@
                             </a>
                         </li>
                         <li class="active">
-                            <a href="#">¿Por qué handelbay?
+                            <a href="index.html">¿Por qué handelbay?
                                 <span class="han-sr-only"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">Blog</a>
+                            <a href="terminos_condiciones.html">Blog</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right handelbay-navbar-right">
                         <li class="active">
-                            <a href="#">Pruébalo gratis</a>
+                            <a href="prueba_gratis.html">Pruébalo gratis</a>
                         </li>
                         <li>
                             <a href="#">Ingresar</a>
@@ -121,7 +121,7 @@
     <section id="what_do_we_do">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-7 col-md-offset-1">
+                <div class="col-md-6 col-sm-7 col-xs-12 col-md-offset-1">
                     <div class="title" itemscope itemtype="https://handelbay.com/">
                         <h1 class="title-2" itemprop="Handelbay en tu día a día">¿Qué hacemos?</h1>
                         <span class="handelbay-active"></span>
@@ -155,6 +155,63 @@
     <div id="handelbay-background-curva-bottom">
     </div>
     <!-- .handelbay-background-curva -->
+
+    <!-- Ignite -->
+    <section id="ignite">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-sm-12 col-md-offset-1" itemscope>
+                    <div class="title-ignite">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                                <a href="#">
+                                    <img src="../Handelbay/images/handelbay_img/handelbay_ignite.png" alt="Ignite technologies">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p itemprop="Handelbay diseño creado por Ignite Technologies S.A.S">
+                        Handelbay diseño creado por Ignite Technologies S.A.S una empresa dedicada al diseño y desarrollo de productos de innivación
+                        en tecnología, ingeniería y ciencia.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 no-p-r no-border-ignite">
+                            <div class="tecno-ignite">
+                                <h1>Tecnología</h1>
+                                <p>
+                                    Estamos convencidos que la tecnología es el camino más óptimo para que nuestros clientes alcancen mayor impacto en sus negocios
+                                    en menos tiempo.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 no-p-r no-p-l no-border-ignite">
+                            <div class="tecno-ignite">
+                                <h1>Ingeniería</h1>
+                                <p>
+                                    Es nuestra herramienta principal para afrontar los problemas y necesidades de nuestros clientes y poder diseñar y entregar
+                                    las mejores soluciones.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 no-p-l no-border-ignite">
+                            <div class="tecno-ignite">
+                                <h1>Ciencia</h1>
+                                <p>
+                                    Articulamos las competencias de nuestro equipo de investigación y desarrolo para diseñar soluciones que permitan racionalizar
+                                    el uso de los recursos naturales renovables, sustituyéndolos con sistemas o recursos
+                                    alternativos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+
+    </section>
+    <!-- End Ignite -->
 
     <!-- BECAUSE HANDELBAY -->
     <section id="because-handelbay">
@@ -405,6 +462,16 @@
     </script>
 
     <script>
-
+        function getMaxOfArray(numArray) {
+            return Math.max.apply(null, numArray);
+        }
+        $(function () {
+            let arrayItems = [];
+            $('.tecno-ignite').each(index => {
+                arrayItems.push($('.tecno-ignite').eq(index).height());
+            });
+            console.log('arrayItems', arrayItems);
+            $('.tecno-ignite').css('min-height', (getMaxOfArray(arrayItems) + 25) + 'px');
+        });
     </script>
 </body>
