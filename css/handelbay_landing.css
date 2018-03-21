@@ -44,14 +44,51 @@ header .navbar-default {
   box-shadow: -1px 0px 17px -2px rgba(0, 0, 0, 0.65);
 }
 
-header#handelbay-background-prueba-gratis .navbar-default{
-  background: rgba(41,119,174,1);
-  background: -moz-linear-gradient(left, rgba(41,119,174,1) 0%, rgba(41,119,174,1) 51%, rgba(43,146,197,1) 71%, rgba(50,186,238,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(41,119,174,1)), color-stop(51%, rgba(41,119,174,1)), color-stop(71%, rgba(43,146,197,1)), color-stop(100%, rgba(50,186,238,1)));
-  background: -webkit-linear-gradient(left, rgba(41,119,174,1) 0%, rgba(41,119,174,1) 51%, rgba(43,146,197,1) 71%, rgba(50,186,238,1) 100%);
-  background: -o-linear-gradient(left, rgba(41,119,174,1) 0%, rgba(41,119,174,1) 51%, rgba(43,146,197,1) 71%, rgba(50,186,238,1) 100%);
-  background: -ms-linear-gradient(left, rgba(41,119,174,1) 0%, rgba(41,119,174,1) 51%, rgba(43,146,197,1) 71%, rgba(50,186,238,1) 100%);
-  background: linear-gradient(to right, rgba(41,119,174,1) 0%, rgba(41,119,174,1) 51%, rgba(43,146,197,1) 71%, rgba(50,186,238,1) 100%);
+header#handelbay-background-prueba-gratis .navbar-default {
+  background: rgba(41, 119, 174, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(41, 119, 174, 1) 0%,
+    rgba(41, 119, 174, 1) 51%,
+    rgba(43, 146, 197, 1) 71%,
+    rgba(50, 186, 238, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(41, 119, 174, 1)),
+    color-stop(51%, rgba(41, 119, 174, 1)),
+    color-stop(71%, rgba(43, 146, 197, 1)),
+    color-stop(100%, rgba(50, 186, 238, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(41, 119, 174, 1) 0%,
+    rgba(41, 119, 174, 1) 51%,
+    rgba(43, 146, 197, 1) 71%,
+    rgba(50, 186, 238, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(41, 119, 174, 1) 0%,
+    rgba(41, 119, 174, 1) 51%,
+    rgba(43, 146, 197, 1) 71%,
+    rgba(50, 186, 238, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(41, 119, 174, 1) 0%,
+    rgba(41, 119, 174, 1) 51%,
+    rgba(43, 146, 197, 1) 71%,
+    rgba(50, 186, 238, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(41, 119, 174, 1) 0%,
+    rgba(41, 119, 174, 1) 51%,
+    rgba(43, 146, 197, 1) 71%,
+    rgba(50, 186, 238, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2977ae', endColorstr='#32baee', GradientType=1 );
 }
 
@@ -125,7 +162,8 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-right li a {
 /* == HANDELBAY INNOVATIVE == */
 #handelbay-innovative,
 #tarifas,
-#terms-conditions, #what_do_we_do {
+#terms-conditions,
+#what_do_we_do {
   padding: 7em 0 0px 0;
 }
 
@@ -1248,22 +1286,25 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-right li a {
   padding: 5px 50px;
 }
 
-#tarifas .tabs-handelbay-planes ul li.active a[href="#buyer"] {
+#tarifas .tabs-handelbay-planes ul li.active a[href="#buyer"],
+#tarifas .tabs-handelbay-planes ul li.buyer a:hover {
   background-color: #30e7a3;
 }
 
-#tarifas .tabs-handelbay-planes ul li.active a[href="#provider"] {
+#tarifas .tabs-handelbay-planes ul li.active a[href="#provider"],
+#tarifas .tabs-handelbay-planes ul li.provider a:hover {
   background-color: #2aa2e1;
 }
 
-#tarifas .tabs-handelbay-planes ul li.active a[href="#dual"] {
+#tarifas .tabs-handelbay-planes ul li.active a[href="#dual"],
+#tarifas .tabs-handelbay-planes ul li.dual a:hover {
   background-color: #7360bc;
 }
 
 #tarifas .tabs-handelbay-planes ul li a:hover {
   border-radius: 40px;
   padding: 5px 50px;
-  opacity: 0.6;
+  opacity: 0.7;
   color: #f4f8fb;
   font-family: "Gotham-Bold";
 }
@@ -1549,20 +1590,24 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-right li a {
   color: #152a3f;
 }
 
+#excelente, #download{
+  margin-top: 60px;
+}
+
 /* == END MODALES == */
 
 /* == END HEADER == */
 
 /*  == Que hacemos == */
-#what_do_we_do{
+#what_do_we_do {
   background-color: #f2f6f9;
-  background-image: url('../images/handelbay_img/Handelbay_que_hacemos.png');
+  background-image: url("../images/handelbay_img/Handelbay_que_hacemos.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position: calc(100% - 0em) center;
 }
-#what_do_we_do .text-bold-handelbay{
+#what_do_we_do .text-bold-handelbay {
   font-family: "Gotham-Bold";
   margin-top: 25px;
 }
@@ -1570,43 +1615,44 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-right li a {
 
 /*  == IGNITE == */
 
-#ignite{
+#ignite {
   margin-top: 6em;
 }
 
-#ignite .title-ignite{
+#ignite .title-ignite {
   margin-bottom: 40px;
   padding: 0 40px;
 }
 
-#ignite .tecno-ignite{
+#ignite .tecno-ignite {
   padding-bottom: 25px;
-  border-left: 1px solid #F9BAC5;
-  border-right: 1px solid #F9BAC5;
+  border-left: 1px solid #f9bac5;
+  border-right: 1px solid #f9bac5;
   margin-top: 30px;
   margin-bottom: 25px;
 }
 
-#ignite .tecno-ignite h1{
+#ignite .tecno-ignite h1 {
   font-family: "Gotham-Bold";
-  color: #EC0D34;
+  color: #ec0d34;
   text-align: center;
   padding: 70px 30px 40px 30px;
-  border-left: 3px solid #EC0D34;
-  border-right: 3px solid #EC0D34;
+  border-left: 3px solid #ec0d34;
+  border-right: 3px solid #ec0d34;
   font-size: 45px;
 }
 
-#ignite .tecno-ignite p{
+#ignite .tecno-ignite p {
   padding: 0 30px;
   margin: 0;
 }
 
-#ignite .title-ignite img{
+#ignite .title-ignite img {
   width: 100%;
 }
 
-#ignite .no-border-ignite .tecno-ignite, #ignite .no-border-ignite .tecno-ignite h1{
+#ignite .no-border-ignite .tecno-ignite,
+#ignite .no-border-ignite .tecno-ignite h1 {
   border-right: 0;
 }
 /*  == END IGNITE == */
@@ -1865,16 +1911,17 @@ footer .handelbay-ignite a {
 
   /* END TARIFAS */
 
-  #ignite .tecno-ignite h1{
+  #ignite .tecno-ignite h1 {
     font-size: 35px;
   }
 
-  #ignite .tecno-ignite h1, #ignite .tecno-ignite p {
+  #ignite .tecno-ignite h1,
+  #ignite .tecno-ignite p {
     padding-right: 15px;
     padding-left: 15px;
   }
 
-  #what_do_we_do{
+  #what_do_we_do {
     background-position: calc(100% - -18em) center;
   }
 
@@ -1981,12 +2028,29 @@ footer .handelbay-ignite a {
 
   /* end Tarifas*/
 
-  #ignite .tecno-ignite{
+  #ignite .tecno-ignite {
     margin-bottom: 0px;
   }
 
   #ignite {
     margin-top: 3em;
+  }
+
+  #modal-demo .modal-body {
+    padding: 0 15px;
+  }
+
+  #modal-demo .equipo p {
+    padding: 20px 0;
+  }
+
+  #modal-demo .img-profile img {
+    height: 200px;
+  }
+
+  #modal-demo .modal-body .col-xs-2,
+  #modal-demo .modal-body .col-xs-10 {
+    width: 100%;
   }
 
   /* Footer */
@@ -2014,5 +2078,3 @@ footer .handelbay-ignite a {
     width: 900px;
   }
 }
-
-

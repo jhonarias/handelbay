@@ -98,13 +98,16 @@
                                 <span class="han-sr-only"></span>
                             </a>
                         </li>
-                        <li class="active">
+                        <li class="">
                             <a href="index.html">¿Por qué handelbay?
                                 <span class="han-sr-only"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="terminos_condiciones.html">Blog</a>
+                            <a href="#">
+                                Blog
+                                <span class="han-sr-only"></span>
+                            </a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right handelbay-navbar-right">
@@ -265,7 +268,7 @@
             <div class="row btn-content-handelbay">
                 <div class="col-md-12 text-center" itemscope>
                     <h3 itemprop="handelbay">
-                        Conoce por qué debes hacer parte de handelbay
+                        Conoce por qué debes hacer parte de handelBay
                     </h3>
                     <a href="#" class="btn btn-handelbay-success" data-toggle="modal" data-target="#modal-demo">Haz click aquí</a>
                 </div>
@@ -280,177 +283,183 @@
     <div class="modal fade" id="modal-demo" tabindex="-1" role="dialog" aria-labelledby="modal-demoLabel">
         <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
-                <div class="modal-header text-center">
-                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button> -->
-                    <h3 class="modal-title" id="modal-demoLabel">Agenda tu DEMO ahora</h3>
-                </div>
-                <div class="modal-body">
-                    <p class="title-body">
-                        Ingresa tu correo electrónico empresarial y recibe la fecha y hora de tu DEMO
-                    </p>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="img-profile">
-                                <img src="images/handelbay_img/handelbay_agenda_profile.png" alt="">
+                <div id="agendatudemo">
+                    <div class="modal-header text-center">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button> -->
+                        <h3 class="modal-title" id="modal-demoLabel">Agenda tu DEMO ahora</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p class="title-body">
+                            Ingresa tu correo electrónico empresarial y recibe la fecha y hora de tu DEMO
+                        </p>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-2">
+                                <div class="img-profile">
+                                    <img src="images/handelbay_img/handelbay_agenda_profile.png" alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-8 col-sm-8">
-                            <form action="#" class="form-valid">
-                                <div class="form-group">
-                                    <label class="">
-                                        <span>Nombre completo de la empresa</span>
-                                        <input type="text" class="floating" required>
-                                    </label>
-                                </div>
-                                <div class="form-group">
-                                    <label class="">
-                                        <span>Tu correo electrónico empresarial</span>
-                                        <input type="email" class="floating" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" title="Correo invalido.">
-                                    </label>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="">
-                                        <span>Selecciona el perfil</span>
-                                        <select type="select" class="floating" required>
-                                            <option value="comprador">Comprador</option>
-                                            <option value="proveedor">Proveedor</option>
-                                            <option value="dual">Dual</option>
-                                        </select>
-                                    </label>
-                                </div>
-
-                                <div class="form-group-check">
-                                    <div class="squared">
-                                        <input type="checkbox" required id="agendar-demo">
-                                        <label class="agendar-demo" for="agendar-demo">
+                            <div class="col-md-8 col-sm-8 col-xs-10">
+                                <form action="javascript: agendaDemo()" class="form-valid">
+                                    <div class="form-group">
+                                        <label class="">
+                                            <span>Nombre completo de la empresa</span>
+                                            <input type="text" class="floating" required>
                                         </label>
                                     </div>
-                                    <div class="check_text inline-block">
-                                        <div class="titles">
-                                            <label for="agendar-demo">
-                                                Me gustaria recibir información y ofertas sobre HandelBay
+                                    <div class="form-group">
+                                        <label class="">
+                                            <span>Tu correo electrónico empresarial</span>
+                                            <input type="email" class="floating" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" title="Correo invalido.">
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="">
+                                            <span>Selecciona el perfil</span>
+                                            <select type="select" class="floating" required>
+                                                <option value="comprador">Comprador</option>
+                                                <option value="proveedor">Proveedor</option>
+                                                <option value="dual">Dual</option>
+                                            </select>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group-check">
+                                        <div class="squared">
+                                            <input type="checkbox" required id="agendar-demo">
+                                            <label class="agendar-demo" for="agendar-demo">
                                             </label>
                                         </div>
+                                        <div class="check_text inline-block">
+                                            <div class="titles">
+                                                <label for="agendar-demo">
+                                                    Me gustaria recibir información y ofertas sobre HandelBay
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Al registrarse está de acuerdo con nuestro
+                                            <strong>Términos de servicio</strong> y
+                                            <strong>Política de Privacidad</strong>
+                                        </p>
                                     </div>
-                                    <p>
-                                        Al registrarse está de acuerdo con nuestro
-                                        <strong>Términos de servicio</strong> y
-                                        <strong>Política de Privacidad</strong>
+                                    <hr>
+                                    <div class="success-demo">
+                                        <button type="submit" class="btn btn-handelbay-success">AGENDA TU DEMO</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end primera parte  -->
+                </div>
+
+                <div id="excelente" style="display:none;">
+                    <div class="modal-header text-center">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button> -->
+                        <h3 class="modal-title" id="modal-demoLabel">¡Excelente!</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p class="title-body">
+                            Ahora recibirás un correo electrónico con todos los detalles necesarios para el DEMO de HandelBay: la nueva ola de negocios.
+                        </p>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-2">
+                                <div class="img-profile">
+                                    <img src="images/handelbay_img/handelbay_agenda_profile.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-10">
+                                <div class="equipo text-center">
+                                    <p>Nuestro equipo estará feliz de conversar contigo y contarte cómo funciona HandelBay
                                     </p>
                                 </div>
                                 <hr>
-                                <div class="success-demo">
-                                    <button class="btn btn-handelbay-success">AGENDA TU DEMO</button>
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- end primera parte  -->
-
-                <div class="modal-header text-center">
-                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button> -->
-                    <h3 class="modal-title" id="modal-demoLabel">¡Excelente!</h3>
-                </div>
-                <div class="modal-body">
-                    <p class="title-body">
-                        Ahora recibirás un correo electrónico con todos los detalles necesarios para el DEMO de HandelBay: la nueva ola de negocios.
-                    </p>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="img-profile">
-                                <img src="images/handelbay_img/handelbay_agenda_profile.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-sm-8">
-                            <div class="equipo text-center">
-                                <p>Nuestro equipo estará feliz de conversar contigo y contarte cómo funciona HandelBay
-                                </p>
-                            </div>
-                            <hr>
-                            <div class="row back-footer">
-                                <div class="col-md-3 text-center">
-                                    <a href="">VOLVER</a>
-                                </div>
-                                <div class="col-md-9">
-                                    <p>
-                                        Si no recibes tu correo con los detalles, vuelve al paso anterior y rectifica tus datos.
-                                    </p>
+                                <div class="row back-footer">
+                                    <div class="col-md-3 text-center">
+                                        <a href="javascript: backagendaDemo()">VOLVER</a>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p>
+                                            Si no recibes tu correo con los detalles, vuelve al paso anterior y rectifica tus datos.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- end segunda parte -->
 
-                <div class="modal-header text-center">
-                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button> -->
-                    <h3 class="modal-title" id="modal-demoLabel">Descarga la guía completa de HandelBay</h3>
-                </div>
-                <div class="modal-body">
-                    <p class="title-body">
-                        Ingresa tu correo electrónico empresarial y descarga inmediatamente toda la información de HandelBay : la nueva ola de negocios.
-                    </p>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="img-profile img-pdf">
-                                <img src="images/handelbay_img/handelbay_foto_pdf.png" alt="">
+                <!-- Tercera parte  -->
+                <div id="download" style="display:none;">
+                    <div class="modal-header text-center">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button> -->
+                        <h3 class="modal-title" id="modal-demoLabel">Descarga la guía completa de HandelBay</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p class="title-body">
+                            Ingresa tu correo electrónico empresarial y descarga inmediatamente toda la información de HandelBay: La nueva ola de negocios.
+                        </p>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-2">
+                                <div class="img-profile img-pdf">
+                                    <img src="images/handelbay_img/handelbay_foto_pdf.png" alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-8 col-sm-8">
-                            <form action="#" class="form-valid">
-                                <div class="form-group">
-                                    <label class="">
-                                        <span>Tu correo electrónico empresarial</span>
-                                        <input type="email" class="floating" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" title="Correo invalido.">
-                                    </label>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="">
-                                        <span>Selecciona el perfil</span>
-                                        <select type="select" class="floating" required>
-                                            <option value="comprador">Comprador</option>
-                                            <option value="proveedor">Proveedor</option>
-                                            <option value="dual">Dual</option>
-                                        </select>
-                                    </label>
-                                </div>
-
-                                <div class="form-group-check">
-                                    <div class="squared">
-                                        <input type="checkbox" required id="downloader-privacity">
-                                        <label class="downloader-privacity" for="downloader-privacity">
+                            <div class="col-md-8 col-sm-8 col-xs-10">
+                                <form action="#" class="form-valid">
+                                    <div class="form-group">
+                                        <label class="">
+                                            <span>Tu correo electrónico empresarial</span>
+                                            <input type="email" class="floating" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" title="Correo invalido.">
                                         </label>
                                     </div>
-                                    <div class="check_text inline-block">
-                                        <div class="titles">
-                                            <label for="downloader-privacity">
-                                                Me gustaria recibir información y ofertas sobre HandelBay
+
+                                    <div class="form-group">
+                                        <label class="">
+                                            <span>Selecciona el perfil</span>
+                                            <select type="select" class="floating" required>
+                                                <option value="comprador">Comprador</option>
+                                                <option value="proveedor">Proveedor</option>
+                                                <option value="dual">Dual</option>
+                                            </select>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group-check">
+                                        <div class="squared">
+                                            <input type="checkbox" required id="downloader-privacity">
+                                            <label class="downloader-privacity" for="downloader-privacity">
                                             </label>
                                         </div>
+                                        <div class="check_text inline-block">
+                                            <div class="titles">
+                                                <label for="downloader-privacity">
+                                                    Me gustaria recibir información y ofertas sobre HandelBay
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Al registrarse está de acuerdo con nuestro
+                                            <strong>Términos de servicio</strong> y
+                                            <strong>Política de Privacidad</strong>
+                                        </p>
                                     </div>
-                                    <p>
-                                        Al registrarse está de acuerdo con nuestro
-                                        <strong>Términos de servicio</strong> y
-                                        <strong>Política de Privacidad</strong>
-                                    </p>
-                                </div>
-                                <hr>
-                                <div class="success-demo">
-                                    <button class="btn btn-handelbay-success">DESCARGAR</button>
-                                </div>
-                            </form>
+                                    <hr>
+                                    <div class="success-demo">
+                                        <button class="btn btn-handelbay-success">DESCARGAR</button>
+                                    </div>
+                                </form>
 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -534,7 +543,7 @@
                             <a href="#">Contacto</a>
                         </li>
                         <li class="">
-                            <a href="#">Legal</a>
+                            <a href="terminos_condiciones.html">Legal</a>
                         </li>
                         <li class="">
                             <a href="#">Políticas</a>
@@ -634,10 +643,36 @@
     </script>
 
     <script>
+        $(function () {
+
+            //Activar el menu
+            var url = window.location.pathname,
+                urlRegExp = new RegExp(url.replace(/\/$/, '') + "$"); // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
+            // now grab every link from the navigation
+            $('.handelbay-navbar-left a').each(function () {
+                // and test its normalized href against the url pathname regexp
+                if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+                    $(this).parent().addClass('active');
+                }
+            });
+            // end activar menu
+
+        });
         $('#modal-demo form input:empty.floating, #modal-demo form textarea:empty.floating').closest('label').addClass('empty');
 
         $('#modal-demo form input.floating').keyup(function () {
             $(this).closest('label').removeClass('empty');
         });
+
+        //Submit del formulario agenda tu demo
+        function agendaDemo() {
+            $('#excelente').show();
+            $('#modal-demo').animate({ scrollTop: $('#excelente').offset().top }, 'slow');
+        }
+
+        function backagendaDemo() {
+            $('#excelente').hide();
+            $('#modal-demo').animate({ scrollTop: $('#agendatudemo').offset().top }, 'slow');
+        }
     </script>
 </body>

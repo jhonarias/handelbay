@@ -98,13 +98,16 @@
                                 <span class="han-sr-only"></span>
                             </a>
                         </li>
-                        <li class="active">
+                        <li class="">
                             <a href="index.html">¿Por qué handelbay?
                                 <span class="han-sr-only"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="terminos_condiciones.html">Blog</a>
+                            <a href="#">
+                                Blog
+                                <span class="han-sr-only"></span>
+                            </a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right handelbay-navbar-right">
@@ -155,13 +158,13 @@
                             <div class="tabs-handelbay-planes text-center">
                                 <!-- Nav tabs -->
                                 <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation" class="">
+                                    <li role="presentation" class="provider">
                                         <a href="#provider" aria-controls="provider" role="tab" data-toggle="tab">Proveedor</a>
                                     </li>
-                                    <li role="presentation" class="active">
+                                    <li role="presentation" class="active dual">
                                         <a href="#dual" aria-controls="dual" role="tab" data-toggle="tab">Dual</a>
                                     </li>
-                                    <li role="presentation">
+                                    <li role="presentation" class="buyer">
                                         <a href="#buyer" aria-controls="buyer" role="tab" data-toggle="tab">Comprador</a>
                                     </li>
                                 </ul>
@@ -889,7 +892,7 @@
             <div class="row btn-content-handelbay">
                 <div class="col-md-12 text-center" itemscope>
                     <h3 itemprop="handelbay">
-                        Conoce por qué debes hacer parte de handelbay
+                        Conoce por qué debes hacer parte de handelBay
                     </h3>
                     <a href="#" class="btn btn-handelbay-success">Haz click aquí</a>
                 </div>
@@ -971,7 +974,7 @@
                             <a href="#">Contacto</a>
                         </li>
                         <li class="">
-                            <a href="#">Legal</a>
+                            <a href="terminos_condiciones.html">Legal</a>
                         </li>
                         <li class="">
                             <a href="#">Políticas</a>
@@ -1087,6 +1090,19 @@
         });
 
         $(function () {
+
+            //Activar el menu
+            var url = window.location.pathname,
+                urlRegExp = new RegExp(url.replace(/\/$/, '') + "$"); // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
+            // now grab every link from the navigation
+            $('.handelbay-navbar-left a').each(function () {
+                // and test its normalized href against the url pathname regexp
+                if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+                    $(this).parent().addClass('active');
+                }
+            });
+            // end activar menu
+
             let arrayItems = [];
             $('.more').popover('toggle');
             $('.more').popover('hide');
@@ -1094,6 +1110,14 @@
                 arrayItems.push($('.col-plan-handelbay-1').eq(index).height());
             });
             $('.col-plan-handelbay-1').css('min-height', (getMaxOfArray(arrayItems) + 35) + 'px');
+
+            //Solo un activo checkbox
+            $('input[type="checkbox"]').on("click", function () {
+                $('input[type="checkbox"]').each(index => {
+                    $('input[type="checkbox"]')[index].checked = false;
+                });
+                $(this)[0].checked = true;
+            });
         });
 
     </script>

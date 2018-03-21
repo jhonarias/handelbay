@@ -52,7 +52,7 @@
 <body>
 
     <!-- HEADER -->
-    <header id="handelbay-background-prueba-gratis">
+    <header>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid handelbay-container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -92,13 +92,16 @@
                                 <span class="han-sr-only"></span>
                             </a>
                         </li>
-                        <li class="active">
+                        <li class="">
                             <a href="index.html">¿Por qué handelbay?
                                 <span class="han-sr-only"></span>
                             </a>
                         </li>
                         <li>
-                            <a href="terminos_condiciones.html">Blog</a>
+                            <a href="">
+                                Blog
+                                <span class="han-sr-only"></span>
+                            </a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right handelbay-navbar-right">
@@ -280,7 +283,7 @@
             <div class="row btn-content-handelbay">
                 <div class="col-md-12 text-center" itemscope>
                     <h3 itemprop="handelbay">
-                        Conoce por qué debes hacer parte de handelbay
+                        Conoce por qué debes hacer parte de handelBay
                     </h3>
                     <a href="#" class="btn btn-handelbay-success" data-toggle="modal" data-target="#modal-demo">Haz click aquí</a>
                 </div>
@@ -362,7 +365,7 @@
                             <a href="#">Contacto</a>
                         </li>
                         <li class="">
-                            <a href="#">Legal</a>
+                            <a href="terminos_condiciones.html">Legal</a>
                         </li>
                         <li class="">
                             <a href="#">Políticas</a>
@@ -466,6 +469,18 @@
             return Math.max.apply(null, numArray);
         }
         $(function () {
+            //Activar el menu
+            var url = window.location.pathname,
+                urlRegExp = new RegExp(url.replace(/\/$/, '') + "$"); // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
+            // now grab every link from the navigation
+            $('.handelbay-navbar-left a').each(function () {
+                // and test its normalized href against the url pathname regexp
+                if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+                    $(this).parent().addClass('active');
+                }
+            });
+            // end activar menu
+
             let arrayItems = [];
             $('.tecno-ignite').each(index => {
                 arrayItems.push($('.tecno-ignite').eq(index).height());
