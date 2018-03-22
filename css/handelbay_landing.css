@@ -34,7 +34,57 @@ body {
 
 /* == HEADER == */
 header .navbar-default {
-  background-color: #30e7a3;
+  background: rgba(35, 199, 130, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(35, 199, 130, 1) 0%,
+    rgba(35, 199, 130, 1) 1%,
+    rgba(35, 199, 130, 1) 26%,
+    rgba(97, 233, 122, 1) 57%,
+    rgba(97, 233, 122, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(35, 199, 130, 1)),
+    color-stop(1%, rgba(35, 199, 130, 1)),
+    color-stop(26%, rgba(35, 199, 130, 1)),
+    color-stop(57%, rgba(97, 233, 122, 1)),
+    color-stop(100%, rgba(97, 233, 122, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(35, 199, 130, 1) 0%,
+    rgba(35, 199, 130, 1) 1%,
+    rgba(35, 199, 130, 1) 26%,
+    rgba(97, 233, 122, 1) 57%,
+    rgba(97, 233, 122, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(35, 199, 130, 1) 0%,
+    rgba(35, 199, 130, 1) 1%,
+    rgba(35, 199, 130, 1) 26%,
+    rgba(97, 233, 122, 1) 57%,
+    rgba(97, 233, 122, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(35, 199, 130, 1) 0%,
+    rgba(35, 199, 130, 1) 1%,
+    rgba(35, 199, 130, 1) 26%,
+    rgba(97, 233, 122, 1) 57%,
+    rgba(97, 233, 122, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(35, 199, 130, 1) 0%,
+    rgba(35, 199, 130, 1) 1%,
+    rgba(35, 199, 130, 1) 26%,
+    rgba(97, 233, 122, 1) 57%,
+    rgba(97, 233, 122, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23c782', endColorstr='#61e97a', GradientType=1 );
   /* background-image: url('../images/handelbay_img/handelbay_fondo_menu.png'); */
   border-radius: 0;
   margin: 0;
@@ -45,51 +95,51 @@ header .navbar-default {
 }
 
 header#handelbay-background-prueba-gratis .navbar-default {
-  background: rgba(41, 119, 174, 1);
+  background: rgba(35, 67, 128, 1);
   background: -moz-linear-gradient(
     left,
-    rgba(41, 119, 174, 1) 0%,
-    rgba(41, 119, 174, 1) 51%,
-    rgba(43, 146, 197, 1) 71%,
-    rgba(50, 186, 238, 1) 100%
+    rgba(35, 67, 128, 1) 0%,
+    rgba(35, 67, 128, 1) 28%,
+    rgba(50, 189, 241, 1) 76%,
+    rgba(50, 189, 241, 1) 100%
   );
   background: -webkit-gradient(
     left top,
     right top,
-    color-stop(0%, rgba(41, 119, 174, 1)),
-    color-stop(51%, rgba(41, 119, 174, 1)),
-    color-stop(71%, rgba(43, 146, 197, 1)),
-    color-stop(100%, rgba(50, 186, 238, 1))
+    color-stop(0%, rgba(35, 67, 128, 1)),
+    color-stop(28%, rgba(35, 67, 128, 1)),
+    color-stop(76%, rgba(50, 189, 241, 1)),
+    color-stop(100%, rgba(50, 189, 241, 1))
   );
   background: -webkit-linear-gradient(
     left,
-    rgba(41, 119, 174, 1) 0%,
-    rgba(41, 119, 174, 1) 51%,
-    rgba(43, 146, 197, 1) 71%,
-    rgba(50, 186, 238, 1) 100%
+    rgba(35, 67, 128, 1) 0%,
+    rgba(35, 67, 128, 1) 28%,
+    rgba(50, 189, 241, 1) 76%,
+    rgba(50, 189, 241, 1) 100%
   );
   background: -o-linear-gradient(
     left,
-    rgba(41, 119, 174, 1) 0%,
-    rgba(41, 119, 174, 1) 51%,
-    rgba(43, 146, 197, 1) 71%,
-    rgba(50, 186, 238, 1) 100%
+    rgba(35, 67, 128, 1) 0%,
+    rgba(35, 67, 128, 1) 28%,
+    rgba(50, 189, 241, 1) 76%,
+    rgba(50, 189, 241, 1) 100%
   );
   background: -ms-linear-gradient(
     left,
-    rgba(41, 119, 174, 1) 0%,
-    rgba(41, 119, 174, 1) 51%,
-    rgba(43, 146, 197, 1) 71%,
-    rgba(50, 186, 238, 1) 100%
+    rgba(35, 67, 128, 1) 0%,
+    rgba(35, 67, 128, 1) 28%,
+    rgba(50, 189, 241, 1) 76%,
+    rgba(50, 189, 241, 1) 100%
   );
   background: linear-gradient(
     to right,
-    rgba(41, 119, 174, 1) 0%,
-    rgba(41, 119, 174, 1) 51%,
-    rgba(43, 146, 197, 1) 71%,
-    rgba(50, 186, 238, 1) 100%
+    rgba(35, 67, 128, 1) 0%,
+    rgba(35, 67, 128, 1) 28%,
+    rgba(50, 189, 241, 1) 76%,
+    rgba(50, 189, 241, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2977ae', endColorstr='#32baee', GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#234380', endColorstr='#32bdf1', GradientType=1 );
 }
 
 header .navbar {
@@ -155,6 +205,24 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-right li a {
   border-radius: 20px;
   border: 1px solid #152a3f;
   padding: 7px 12px;
+}
+
+header
+  .handelbay-navbar-collapse
+  ul.handelbay-navbar-left
+  > li
+  > a.logo-handelbay-img {
+  padding: 15px 15px;
+}
+
+header
+  .handelbay-navbar-collapse
+  ul.handelbay-navbar-left
+  > li
+  > a.logo-handelbay-img
+  img {
+  width: 130px;
+  object-fit: cover;
 }
 
 /*  PÁGINA POR QUÉ HANDELBAY */
@@ -1590,7 +1658,8 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-right li a {
   color: #152a3f;
 }
 
-#excelente, #download{
+#excelente,
+#download {
   margin-top: 60px;
 }
 
@@ -1850,6 +1919,18 @@ footer .handelbay-ignite a {
 
   header .navbar-header-logo button span.icon-bar {
     background-color: #f4f8fb;
+  }
+
+  header .navbar-default .navbar-brand {
+    display: block !important;
+  }
+
+  header
+    .handelbay-navbar-collapse
+    ul.handelbay-navbar-left
+    > li
+    > a.logo-handelbay-img {
+    display: none;
   }
 
   #because-handelbay {
