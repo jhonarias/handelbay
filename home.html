@@ -285,7 +285,10 @@
     <!-- END VINCULA TU EMPRESA AHORA -->
 
     <!-- LA MEJOR FORMA DE OPTIMIZAR TU TIEMPO -->
-    <section id="optimize-time">
+    <section id="optimize-time">            
+        <div class="embed-responsive_ embed-optimize embed-responsive-16by9" style="display: none;">
+            <iframe src="https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=0" height="100%" width="100%"></iframe>    
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-6">
@@ -293,10 +296,11 @@
                     <p>
                         Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni u
                     </p>
-                    <a href="#" class="btn btn-handelbay-success btn-handelbay-write"><i class="fa fa-play-circle"></i> <span>Ver video</span></a>
+                    <a href="javascript:void(0)" class="btn btn-media btn-handelbay-success btn-handelbay-write" onclick="showEmbed()"><i class="fa fa-play-circle"></i> <span>Ver video</span></a>
                 </div>
             </div>
         </div>
+        <a href="javascript:void(0)" class="btn btn-no-media btn-handelbay-success btn-handelbay-write" onclick="showEmbed()" style="display: none;"><i class="fa fa-play-circle"></i> <span>Ver video</span></a>
     </section>
     <!-- END LA MEJOR FORMA DE OPTIMIZAR TU TIEMPO -->
 
@@ -319,37 +323,37 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                    <div class="row items">
-                       <div class="col-md-6 col-sm-6">
+                       <div class="col-md-6 col-sm-12">
                            <div class="more">
                             +
                            </div>
                            <span>Compras en línea 24/7</span>
                        </div>
-                       <div class="col-md-6 col-sm-6">
+                       <div class="col-md-6 col-sm-12">
                             <div class="more">
                              +
                             </div>
                             <span>Transparencia</span>
                         </div>
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-6 col-sm-12">
                             <div class="more">
                                 +
                             </div>
                             <span>Red verificada</span>
                         </div>
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-6 col-sm-12">
                             <div class="more">
                                 +
                             </div>
                             <span>Más ventas</span>
                         </div>
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-6 col-sm-12">
                             <div class="more">
                                 +
                             </div>
                             <span>Ahorros</span>
                         </div>
-                        <div class="col-md-6 col-sm-6">
+                        <div class="col-md-6 col-sm-12">
                             <div class="more">
                                 +
                             </div>
@@ -378,7 +382,7 @@
     <!-- .handelbay-background-curva -->
 
     <!-- END BECAUSE HANDELBAY -->
-    <section id="because-handelbay">
+    <section id="because-handelbay" class="home-not-background">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-12 col-xs-12 col-md-offset-1">
@@ -441,14 +445,14 @@
                 </div>
             </div>
             <!-- .row -->
-            <div class="row btn-content-handelbay">
+            <!-- <div class="row btn-content-handelbay">
                 <div class="col-md-12 text-center" itemscope>
                     <h3 itemprop="handelbay">
                         Conoce por qué debes hacer parte de handelBay
                     </h3>
                     <a href="#" class="btn btn-handelbay-success">Haz click aquí</a>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- .container -->
     </section>
@@ -457,11 +461,19 @@
     <!-- CON RESPALDO DE -->
     <section id="with-support-from">
         <div class="container text-center">
+            <div class="row btn-content-handelbay">
+                <div class="col-md-12 text-center" itemscope>
+                    <h3 itemprop="handelbay">
+                        Conoce por qué debes hacer parte de handelBay
+                    </h3>
+                    <a href="#" class="btn btn-handelbay-success">Haz click aquí</a>
+                </div>
+            </div>
             <div class="content-text">
                 <div class="text">
                     <h2>Con el respaldo de</h2>
                 </div>
-                <div class="btn--">
+                <div class="btn--handelbay">
                     <a href="#" class="btn no-margin-left btn-handelbay-success btn-handelbay-black">Recibe toda la información detallada de HandelBay en PDF</a>
                 </div>                
             </div>            
@@ -656,5 +668,18 @@
             // end activar menu
 
         });
+
+        function showEmbed(){
+            $('.embed-optimize').toggle();
+            if($('.embed-optimize').attr('style') != "display: none;"){
+                $('.embed-optimize iframe').attr('src', 'https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=1');
+                $('#optimize-time .btn-handelbay-write span').text('Ocultar video');
+                $('#optimize-time').addClass('reproduced');
+            } else {
+                $('.embed-optimize iframe').attr('src', 'https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=0');
+                $('#optimize-time .btn-handelbay-write span').text('Ver video');
+                $('#optimize-time').removeClass('reproduced');
+            }
+        }
     </script>
 </body>
