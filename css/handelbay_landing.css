@@ -380,27 +380,27 @@ header
   cursor: pointer;
 }
 
-#with-support-from{
-  background-image: url('../images/handelbay_img/handelbay_marcas.png');
-  background-repeat: no-repeat;  
+#with-support-from {
+  background-image: url("../images/handelbay_img/handelbay_marcas.png");
+  background-repeat: no-repeat;
   background-size: cover;
   min-height: 452px;
 }
 
-#with-support-from .btn--handelbay{
+#with-support-from .btn--handelbay {
   margin-top: 8em;
 }
 
-.home-not-background{
+.home-not-background {
   background-image: inherit !important;
   padding-bottom: 0;
 }
 
-#with-support-from .btn-content-handelbay{
+#with-support-from .btn-content-handelbay {
   margin-bottom: 70px;
 }
 
-#with-support-from .btn-content-handelbay h3{
+#with-support-from .btn-content-handelbay h3 {
   font-size: 18px;
   font-family: "Gotham-Bold";
   margin-top: 38px;
@@ -2181,7 +2181,10 @@ footer .handelbay-ignite a {
   }
 
   #handelbay-innovative,
-  #tarifas, #immerse, #what_do_we_do, #terms-conditions {
+  #tarifas,
+  #immerse,
+  #what_do_we_do,
+  #terms-conditions {
     padding-top: 9em;
   }
 
@@ -2216,11 +2219,13 @@ footer .handelbay-ignite a {
     background-position: calc(100% - -18em) center;
   }
 
-  #optimize-time.reproduced h3, #optimize-time.reproduced p, #optimize-time.reproduced .btn-media{
+  #optimize-time.reproduced h3,
+  #optimize-time.reproduced p,
+  #optimize-time.reproduced .btn-media {
     display: none;
   }
 
-  #optimize-time.reproduced .btn-no-media{
+  #optimize-time.reproduced .btn-no-media {
     display: block !important;
     position: absolute;
     bottom: 50px;
@@ -2232,8 +2237,13 @@ footer .handelbay-ignite a {
     background-position: center 54px;
   }
 
-  #with-support-from .btn--handelbay{
+  #with-support-from .btn--handelbay {
     margin-top: 6em;
+  }
+
+  #immerse .title > h1.title-2,
+  #what_do_we_do .title > h1.title-2 {
+    margin-top: 20px;
   }
 
   /* Footer */
@@ -2278,7 +2288,9 @@ footer .handelbay-ignite a {
   }
 
   #handelbay-innovative,
-  #tarifas {
+  #tarifas,
+  #what_do_we_do,
+  #immerse {
     padding-top: 4em;
   }
 
@@ -2367,7 +2379,7 @@ footer .handelbay-ignite a {
     width: 100%;
   }
 
-  #benefits .col-xs-6{
+  #benefits .col-xs-6 {
     width: 100%;
   }
 
@@ -2397,8 +2409,7 @@ footer .handelbay-ignite a {
   }
 }
 
-
-@media (min-width: 1366px){
+@media (min-width: 1366px) {
   #optimize-time {
     max-width: 1200px;
     margin: 0 auto;
