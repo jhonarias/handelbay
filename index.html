@@ -146,7 +146,7 @@
                     </div>
                     <div class="handelbay-text" itemscope itemtype="https://handelbay.com/">
                         <p itemprop="HandelBay es un murketplace">
-                            HandelBay es un murketplace (B2B - Business Business) que reúne a compradores y proveedores verificados por medio de una
+                            HandelBay es un marketplace (B2B - Business to Business) que reúne a compradores y proveedores verificados por medio de una
                             red social y plataforma de compras, con el fin de optimizar los procesos internos asociados al
                             abastecimiento y compras empresariales.
                         </p>
@@ -159,8 +159,8 @@
                     <div class="handelbay-allows-you text-center">
                         <div class="title-footer">
                             <h3>
-                                <strong>Handelbay</strong> te permite gestionar dos de los procesos
-                                <br> más improtantes de tu negocio:
+                                <strong>HandelBay</strong> te permite gestionar dos de los procesos
+                                <br> más importantes de tu negocio:
                                 <strong>ABASTECIMIENTO </strong>y
                                 <strong>VENTAS</strong>.
                             </h3>
@@ -285,10 +285,13 @@
     <!-- END VINCULA TU EMPRESA AHORA -->
 
     <!-- LA MEJOR FORMA DE OPTIMIZAR TU TIEMPO -->
-    <section id="optimize-time">            
-        <div class="embed-responsive_ embed-optimize embed-responsive-16by9" style="display: none;">
-            <iframe src="https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=0" height="100%" width="100%"></iframe>    
+    <section id="optimize-time-video" style="display: none;">
+        <div class="embed-responsive_ embed-optimize">
+            <iframe src="https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=0" height="100%" width="100%"></iframe>
+            <a href="javascript:void(0)" class="btn btn-handelbay-success btn-handelbay-write" onclick="showEmbed('1')"><i class="fa fa-play-circle"></i> <span>Ocultar video</span></a>
         </div>
+    </section>
+    <section id="optimize-time">                   
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-6">
@@ -296,11 +299,10 @@
                     <p>
                         Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni u
                     </p>
-                    <a href="javascript:void(0)" class="btn btn-media btn-handelbay-success btn-handelbay-write" onclick="showEmbed()"><i class="fa fa-play-circle"></i> <span>Ver video</span></a>
+                    <a href="javascript:void(0)" class="btn btn-handelbay-success btn-handelbay-write" onclick="showEmbed('0')"><i class="fa fa-play-circle"></i> <span>Ver video</span></a>
                 </div>
             </div>
-        </div>
-        <a href="javascript:void(0)" class="btn btn-no-media btn-handelbay-success btn-handelbay-write" onclick="showEmbed()" style="display: none;"><i class="fa fa-play-circle"></i> <span>Ver video</span></a>
+        </div>        
     </section>
     <!-- END LA MEJOR FORMA DE OPTIMIZAR TU TIEMPO -->
 
@@ -544,7 +546,7 @@
                 <div class="col-md-2 col-sm-2 col-xs-4">
                     <ul class="handelbay-HandelBay">
                         <li class="active">
-                            <a href="#">Compañia</a>
+                            <a href="#">Compañía</a>
                         </li>
                         <li class="">
                             <a href="#">Acerca de</a>
@@ -592,7 +594,7 @@
                             <a href="#">Soporte</a>
                         </li>
                         <li class="">
-                            <a href="#">Login</a>
+                            <a href="#">Ingresar</a>
                         </li>
                         <li class="">
                             <a href="#">Registro</a>
@@ -669,17 +671,28 @@
 
         });
 
-        function showEmbed(){
-            $('.embed-optimize').toggle();
-            if($('.embed-optimize').attr('style') != "display: none;"){
+        function showEmbed(x){
+
+            if (x == 0) {
+                $('#optimize-time-video').show();
+                $('#optimize-time').hide();
                 $('.embed-optimize iframe').attr('src', 'https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=1');
-                $('#optimize-time .btn-handelbay-write span').text('Ocultar video');
-                $('#optimize-time').addClass('reproduced');
             } else {
+                $('#optimize-time-video').hide();
+                $('#optimize-time').show();
                 $('.embed-optimize iframe').attr('src', 'https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=0');
-                $('#optimize-time .btn-handelbay-write span').text('Ver video');
-                $('#optimize-time').removeClass('reproduced');
             }
+
+            // $('.embed-optimize').toggle();
+            // if($('.embed-optimize').attr('style') != "display: none;"){
+            //     $('.embed-optimize iframe').attr('src', 'https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=1');
+            //     $('#optimize-time .btn-handelbay-write span').text('Ocultar video');
+            //     $('#optimize-time').addClass('reproduced');
+            // } else {
+            //     $('.embed-optimize iframe').attr('src', 'https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=0');
+            //     $('#optimize-time .btn-handelbay-write span').text('Ver video');
+            //     $('#optimize-time').removeClass('reproduced');
+            // }
         }
     </script>
 </body>

@@ -146,6 +146,9 @@
                         <span class="handelbay-active"></span>
                     </div>
                 </div>
+                <div class="col-md-3 col-sm-3 hidden-sm img-header col-md-offset-1 col-sm-offset-1">
+                    <img src="images/handelbay_img/handelbay_tarifas_header.png" alt="Tarifas y costos">
+                </div>
             </div>
             <!-- .row -->
         </div>
@@ -186,16 +189,20 @@
                                 <div role="tabpanel" class="tab-pane active" id="dual">
                                     <div class="title-tab text-center">
                                         <p>
-                                            Para este perfil debes escoger un plan proveedor y un plan comprador
+                                            Este perfil consta de un <strong>PLAN COMPRADOR </strong>y un <strong>PLAN PROVEEDOR</strong>
                                         </p>
                                     </div>
                                     <hr class="hr-space-step">
                                     <div class="handelbay-progress-title">
                                         <span>2</span>
-                                        <h3>Escoge el tiempo de tu licencia</h3>
+                                        <h3>Seleccione el plan que mejor se adapte a tus necesidades</h3>
                                     </div>
                                     <div class="months text-center">
-                                        <div class="handelbay-checkbox">
+                                        <p class="time_licence">Tiempo de licencia</p>
+                                        <button class="btn-time active"><span>1 mes</span></button>
+                                        <button class="btn-time"><span>6 meses</span> </button>
+                                        <button class="btn-time"><span>12 meses</span></button>
+                                        <!-- <div class="handelbay-checkbox">
                                             <div class="squared">
                                                 <input type="checkbox" id="first_semester">
                                                 <label class="first_semester" for="first_semester">
@@ -236,9 +243,9 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
-                                    <div class="title-plan-time text-center">
+                                    <!-- <div class="title-plan-time text-center">
                                         <p class="title-1">Para el plan
                                             <strong>12 meses</strong> obtienes un descuento del
                                             <strong class="sub-text">15%</strong> en la tarifa del mes normal</p>
@@ -249,8 +256,8 @@
                                     <div class="handelbay-progress-title">
                                         <span>3</span>
                                         <h3>Selecciona el plan que mejor se adapte a tus necesidades</h3>
-                                    </div>
-                                    <div class="title-tab text-center">
+                                    </div> -->
+                                    <div class="title-tab text-center title-type-plan">
                                         <p>
                                             PLAN PROVEEDOR
                                         </p>
@@ -477,7 +484,7 @@
                                     </div>
                                     <!-- .row-handelbay-plannes -->
 
-                                    <div class="title-tab text-center">
+                                    <div class="title-tab text-center title-type-plan">
                                         <p>
                                             PLAN COMPRADOR
                                         </p>
@@ -973,7 +980,7 @@
                 <div class="col-md-2 col-sm-2 col-xs-4">
                     <ul class="handelbay-HandelBay">
                         <li class="active">
-                            <a href="#">Compañia</a>
+                            <a href="#">Compañía</a>
                         </li>
                         <li class="">
                             <a href="#">Acerca de</a>
@@ -1021,7 +1028,7 @@
                             <a href="#">Soporte</a>
                         </li>
                         <li class="">
-                            <a href="#">Login</a>
+                            <a href="#">Ingresar</a>
                         </li>
                         <li class="">
                             <a href="#">Registro</a>
@@ -1118,13 +1125,18 @@
                 arrayItems.push($('.col-plan-handelbay-1').eq(index).height());
             });
             $('.col-plan-handelbay-1').css('min-height', (getMaxOfArray(arrayItems) + 35) + 'px');
-
             //Solo un activo checkbox
-            $('input[type="checkbox"]').on("click", function () {
-                $('input[type="checkbox"]').each(index => {
-                    $('input[type="checkbox"]')[index].checked = false;
+            // $('input[type="checkbox"]').on("click", function () {
+            //     $('input[type="checkbox"]').each(index => {
+            //         $('input[type="checkbox"]')[index].checked = false;
+            //     });
+            //     $(this)[0].checked = true;
+            // });
+            $('.btn-time').on("click", function () {
+                $('.btn-time').each(index => {
+                    $('.btn-time').eq(index).removeClass('active');
                 });
-                $(this)[0].checked = true;
+                $(this).addClass('active');
             });
         });
 
