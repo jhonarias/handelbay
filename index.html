@@ -18,6 +18,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link href="css/handelbay_landing.css" rel="stylesheet" type="text/css">
+    <link href="css/medias.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -58,7 +59,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- HEADER -->
-    <header>
+    <header id="handelbay-bacground-none">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid handelbay-container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -118,7 +119,7 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right handelbay-navbar-right">
                             <li class="active">
-                                <a href="prueba_gratis.html">Pruébalo gratis</a>
+                                <a href="prueba_gratis.html">Acerca de</a>
                             </li>
                             <li>
                                 <a href="#">Ingresar</a>
@@ -133,6 +134,33 @@
         </nav>
     </header>
     <!-- END HEADER -->
+
+    <!-- Mi compañia ahora optimiza -->
+    <section id="handelbay_optimizes" class="section-top-contend">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-md-offset-1 col-xs-8">
+                    <div class="title" itemscope itemtype="https://handelbay.com/">                       
+                        <h1 class="title-2" itemprop="Handelbay en tu día a día">
+                            Mi compañía<br> ahora optimiza <br>mejor el tiempo
+                        </h1>
+                        <span class="handelbay-active"></span>
+                    </div>
+                    <div class="title-footer">
+                        <a href="" class="btn no-margin-left btn-handelbay-success btn-handelbay-black">Saber más</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-5 col-xs-4">
+                    <div class="image_home_top">
+                        <img src="images/handelbay_img/handelbay_home_top.png" alt="Mi compañía ahora optimiza mejor el tiempo">
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </section>
+    <!-- End mi compañia ahora optimiza -->
 
     <!-- SUMERGETE EN LA NUEVA OLA DE NEGOCIOS -->
     <section id="immerse">
@@ -476,12 +504,92 @@
                     <h2>Con el respaldo de</h2>
                 </div>
                 <div class="btn--handelbay">
-                    <a href="#" class="btn no-margin-left btn-handelbay-success btn-handelbay-black">Recibe toda la información detallada de HandelBay en PDF</a>
+                    <a href="#" data-toggle="modal" data-target="#modal-demo" class="btn no-margin-left btn-handelbay-success btn-handelbay-black">Recibe toda la información detallada de HandelBay en PDF</a>
                 </div>                
             </div>            
         </div>
     </section>
     <!-- END CON RESPALDO DE -->
+
+    <!-- MODAL PDF -->
+    <!-- Modal -->
+    <div class="modal fade" id="modal-demo" tabindex="-1" role="dialog" aria-labelledby="modal-demoLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <!-- Tercera parte  -->
+                <div id="download">
+                    <div class="modal-header text-center">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button> -->
+                        <h3 class="modal-title" id="modal-demoLabel">Descarga la guía completa de HandelBay</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p class="title-body">
+                            Ingresa tu correo electrónico empresarial y descarga inmediatamente toda la información de HandelBay: La nueva ola de negocios.
+                        </p>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-2">
+                                <div class="img-profile img-pdf">
+                                    <img src="images/handelbay_img/handelbay_foto_pdf.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-10">
+                                <form action="#" class="form-valid">
+                                    <div class="form-group">
+                                        <label class="">
+                                            <span>Tu correo electrónico empresarial</span>
+                                            <input type="email" class="floating" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" title="Correo invalido.">
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="">
+                                            <span>Selecciona el perfil</span>
+                                            <select type="select" class="floating" required>
+                                                <option value="comprador">Comprador</option>
+                                                <option value="proveedor">Proveedor</option>
+                                                <option value="dual">Dual</option>
+                                            </select>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group-check">
+                                        <div class="squared">
+                                            <input type="checkbox" required id="downloader-privacity">
+                                            <label class="downloader-privacity" for="downloader-privacity">
+                                            </label>
+                                        </div>
+                                        <div class="check_text inline-block">
+                                            <div class="titles">
+                                                <label for="downloader-privacity">
+                                                    Me gustaria recibir información y ofertas sobre HandelBay
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Al registrarse está de acuerdo con nuestro
+                                            <strong>Términos de servicio</strong> y
+                                            <strong>Política de Privacidad</strong>
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="success-demo">
+                                        <button class="btn btn-handelbay-success">DESCARGAR</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end tercera parte  -->
+
+            </div>
+            <!-- .modal-content -->
+        </div>
+    </div>
+    <!-- END MODAL AGENDA TU DEMO AHORA -->
 
     <!-- FOOTER -->
     <footer>
@@ -653,46 +761,6 @@
         }
     }
     </script>
-
-    <script>
-        $(function () {
-
-            //Activar el menu
-            var url = window.location.pathname,
-                urlRegExp = new RegExp(url.replace(/\/$/, '') + "$"); // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
-            // now grab every link from the navigation
-            $('.handelbay-navbar-left a').each(function () {
-                // and test its normalized href against the url pathname regexp
-                if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
-                    $(this).parent().addClass('active');
-                }
-            });
-            // end activar menu
-
-        });
-
-        function showEmbed(x){
-
-            if (x == 0) {
-                $('#optimize-time-video').show();
-                $('#optimize-time').hide();
-                $('.embed-optimize iframe').attr('src', 'https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=1');
-            } else {
-                $('#optimize-time-video').hide();
-                $('#optimize-time').show();
-                $('.embed-optimize iframe').attr('src', 'https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=0');
-            }
-
-            // $('.embed-optimize').toggle();
-            // if($('.embed-optimize').attr('style') != "display: none;"){
-            //     $('.embed-optimize iframe').attr('src', 'https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=1');
-            //     $('#optimize-time .btn-handelbay-write span').text('Ocultar video');
-            //     $('#optimize-time').addClass('reproduced');
-            // } else {
-            //     $('.embed-optimize iframe').attr('src', 'https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=0');
-            //     $('#optimize-time .btn-handelbay-write span').text('Ver video');
-            //     $('#optimize-time').removeClass('reproduced');
-            // }
-        }
-    </script>
+    <script src="js/functions.js"></script>
+    <script src="js/scrollMenu.js"></script>
 </body>

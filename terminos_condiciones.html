@@ -18,7 +18,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link href="css/handelbay_landing.css" rel="stylesheet" type="text/css">
-
+    <link href="css/medias.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -118,7 +118,7 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right handelbay-navbar-right">
                             <li class="active">
-                                <a href="prueba_gratis.html">Pruébalo gratis</a>
+                                <a href="prueba_gratis.html">Acerca de</a>
                             </li>
                             <li>
                                 <a href="#">Ingresar</a>
@@ -311,22 +311,22 @@
                             <div class="col-md-8 col-sm-8 col-xs-10">
                                 <form action="javascript: agendaDemo()" class="form-valid">
                                     <div class="form-group">
-                                        <label class="">
+                                        <label class="" for="name">
                                             <span>Nombre completo de la empresa</span>
-                                            <input type="text" class="floating" required>
+                                            <input type="text" class="floating" required id="name">
                                         </label>
                                     </div>
                                     <div class="form-group">
-                                        <label class="">
+                                        <label class="" for="emailF">
                                             <span>Tu correo electrónico empresarial</span>
-                                            <input type="email" class="floating" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" title="Correo invalido.">
+                                            <input type="email" class="floating" id="emailF" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" title="Correo invalido.">
                                         </label>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="">
+                                        <label class="" for="profiles">
                                             <span>Selecciona el perfil</span>
-                                            <select type="select" class="floating" required>
+                                            <select type="select" class="floating" id="profiles" required>
                                                 <option value="comprador">Comprador</option>
                                                 <option value="proveedor">Proveedor</option>
                                                 <option value="dual">Dual</option>
@@ -403,76 +403,6 @@
                     </div>
                 </div>
                 <!-- end segunda parte -->
-
-                <!-- Tercera parte  -->
-                <div id="download" style="display:none;">
-                    <div class="modal-header text-center">
-                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button> -->
-                        <h3 class="modal-title" id="modal-demoLabel">Descarga la guía completa de HandelBay</h3>
-                    </div>
-                    <div class="modal-body">
-                        <p class="title-body">
-                            Ingresa tu correo electrónico empresarial y descarga inmediatamente toda la información de HandelBay: La nueva ola de negocios.
-                        </p>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4 col-xs-2">
-                                <div class="img-profile img-pdf">
-                                    <img src="images/handelbay_img/handelbay_foto_pdf.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8 col-sm-8 col-xs-10">
-                                <form action="#" class="form-valid">
-                                    <div class="form-group">
-                                        <label class="">
-                                            <span>Tu correo electrónico empresarial</span>
-                                            <input type="email" class="floating" required pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" title="Correo invalido.">
-                                        </label>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="">
-                                            <span>Selecciona el perfil</span>
-                                            <select type="select" class="floating" required>
-                                                <option value="comprador">Comprador</option>
-                                                <option value="proveedor">Proveedor</option>
-                                                <option value="dual">Dual</option>
-                                            </select>
-                                        </label>
-                                    </div>
-
-                                    <div class="form-group-check">
-                                        <div class="squared">
-                                            <input type="checkbox" required id="downloader-privacity">
-                                            <label class="downloader-privacity" for="downloader-privacity">
-                                            </label>
-                                        </div>
-                                        <div class="check_text inline-block">
-                                            <div class="titles">
-                                                <label for="downloader-privacity">
-                                                    Me gustaria recibir información y ofertas sobre HandelBay
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <p>
-                                            Al registrarse está de acuerdo con nuestro
-                                            <strong>Términos de servicio</strong> y
-                                            <strong>Política de Privacidad</strong>
-                                        </p>
-                                    </div>
-                                    <hr>
-                                    <div class="success-demo">
-                                        <button class="btn btn-handelbay-success">DESCARGAR</button>
-                                    </div>
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end tercera parte  -->
-
             </div>
             <!-- .modal-content -->
         </div>
@@ -649,38 +579,5 @@
         }
     }
     </script>
-
-    <script>
-        $(function () {
-
-            //Activar el menu
-            var url = window.location.pathname,
-                urlRegExp = new RegExp(url.replace(/\/$/, '') + "$"); // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
-            // now grab every link from the navigation
-            $('.handelbay-navbar-left a').each(function () {
-                // and test its normalized href against the url pathname regexp
-                if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
-                    $(this).parent().addClass('active');
-                }
-            });
-            // end activar menu
-
-        });
-        $('#modal-demo form input:empty.floating, #modal-demo form textarea:empty.floating').closest('label').addClass('empty');
-
-        $('#modal-demo form input.floating').keyup(function () {
-            $(this).closest('label').removeClass('empty');
-        });
-
-        //Submit del formulario agenda tu demo
-        function agendaDemo() {
-            $('#excelente').show();
-            $('#modal-demo').animate({ scrollTop: $('#excelente').offset().top }, 'slow');
-        }
-
-        function backagendaDemo() {
-            $('#excelente').hide();
-            $('#modal-demo').animate({ scrollTop: $('#agendatudemo').offset().top }, 'slow');
-        }
-    </script>
+    <script src="js/functions.js"></script>
 </body>

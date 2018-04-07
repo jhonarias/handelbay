@@ -1,0 +1,345 @@
+@media (max-width: 1199px) and (min-width: 992px) {
+  #handelbay_optimizes .image_home_top {
+    top: 50px;
+  }
+  #tarifas .img-header img {
+    top: 30px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 992px) {
+  #tarifas
+    .handelbay-content-planes
+    .row-handelbay-plannes
+    .col-plan-handelbay-1 {
+    width: 23%;
+  }
+}
+@media (min-width: 1366px) {
+  section, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .handelbay-tradicional-content .background-1 .title-last span {
+    right: 115px;
+  }
+  .handelbay-tradicional-content .background-2 .title-last span {
+    right: 140px;
+  }
+  .handelbay-tradicional-content .background-3 .title-last span {
+    right: 60px;
+  }
+  .handelbay-tradicional-content .background-4 .title-last span {
+    right: 90px;
+  }
+}
+
+@media (max-width: 992px) {
+  #because-handelbay {
+    margin-top: 0;
+  }
+  #because-handelbay .image-1 {
+    margin-top: 80px;
+  }
+  /* TARIFAS */
+  #tarifas
+    .handelbay-content-planes
+    .row-handelbay-plannes
+    .col-plan-handelbay-1 {
+    width: 31.333333333%;
+    margin-top: 60px;
+  }
+  #tarifas .handelbay-content-planes .row-handelbay-plannes {
+    margin-top: 0;
+  }
+  #tarifas .img-header img {
+    top: -12px;
+  }
+  #why_handelbay .img_provider_and_buyer,
+  #why_handelbay .text-bottom {
+    margin: 0;
+  }
+  /* END TARIFAS */
+  #handelbay_optimizes .image_home_top {
+    position: relative;
+    top: 0;
+  }
+  #handelbay_optimizes .title h1 {
+    font-size: 50px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  header .navbar-default {
+    padding-bottom: 15px;
+  }
+  header .handelbay-container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  header .navbar-header-logo a {
+    display: block;
+  }
+  header .handelbay-navbar-collapse ul.handelbay-navbar-left > li > a {
+    padding: 15px 10px;
+    display: inline-block;
+  }
+  header .handelbay-navbar-collapse ul.handelbay-navbar-right li a {
+    top: 0;
+  }
+  header
+    .handelbay-navbar-collapse
+    ul.handelbay-navbar-left
+    > li.active
+    > a
+    > span.han-sr-only {
+    width: 40%;
+  }
+  header .handelbay-navbar-collapse ul.handelbay-navbar-right li a {
+    margin: 4px 10px;
+  }
+  header .navbar-header-logo a {
+    padding: 5px;
+  }
+  header .navbar-header-logo button.navbar-toggle {
+    background-color: #152a3f !important;
+    border: 0;
+  }
+  header .navbar-header-logo button span.icon-bar {
+    background-color: #f4f8fb;
+  }
+  header .navbar-default .navbar-brand {
+    display: block !important;
+  }
+  header
+    .handelbay-navbar-collapse
+    ul.handelbay-navbar-left
+    > li
+    > a.logo-handelbay-img {
+    display: none;
+  }
+  #because-handelbay {
+    background-position: center 60px;
+  }
+  /* ABASTECIMIENTO */
+  .background-1,
+  .background-2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .handelbay-tradicional-content .handelbay-progress .text-left-handelbay {
+    text-align: left;
+  }
+  .handelbay-tradicional-content .handelbay-progress {
+    font-size: 14px;
+    margin: 15px 0;
+  }
+  .handelbay-tradicional-content .title-last span {
+    position: relative;
+    transform: inherit;
+    right: 0;
+    top: 0;
+  }
+  .handelbay-tradicional-content .handelbay-progress .first-text {
+    border-right: 0;
+  }
+  .handelbay-tradicional-content .background-1 .title-last span,
+  .handelbay-tradicional-content .background-2 .title-last span {
+    right: 0;
+  }
+  #handelbay-innovative,
+  #tarifas,
+  #immerse,
+  #terms-conditions {
+    padding-top: 9em;
+  }
+  /* END ABASTECIMIENTO */
+  /* TARIFAS */
+  #tarifas
+    .handelbay-content-planes
+    .row-handelbay-plannes
+    .col-plan-handelbay-1 {
+    width: 31.333333333%;
+  }
+  #free-trial {
+    background-size: cover;
+  }
+  /* END TARIFAS */
+  #ignite .tecno-ignite h1 {
+    font-size: 35px;
+  }
+  #ignite .tecno-ignite h1,
+  #ignite .tecno-ignite p {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  #what_do_we_do {
+    background-position: calc(100% - -18em) center;
+  }
+  #with-support-from {
+    background-size: 100% 100%;
+    background-position: center 54px;
+  }
+  #with-support-from .btn--handelbay {
+    margin-top: 6em;
+  }
+  #immerse .title > h1.title-2,
+  #what_do_we_do .title > h1.title-2 {
+    margin-top: 20px;
+  }
+  #optimize-time-video .embed-optimize {
+    width: 75%;
+    text-align: center;
+  }
+  #tarifas .handelbay-content-planes .months .btn-time {
+    margin: 0 10px 15px 0;
+  }
+  #tarifas .img-header img {
+    top: 20px;
+  }
+  #handelbay_optimizes .title h1 {
+    font-size: 28px !important;
+  }
+  /* Footer */
+  footer .handelbay-form-subscribe {
+    padding-bottom: 0;
+  }
+  footer .handelbay-img-footer a {
+    margin-top: 4em;
+  }
+  footer .handelbay-form button {
+    padding: 5px 12px;
+  }
+  footer .handelbay-form-subscribe .title > h1 {
+    font-size: 40px;
+  }
+}
+
+/*Ipad Pro*/
+
+@media (max-width: 1050px) and (min-width: 768px) {
+  header .navbar-default {
+    padding-bottom: 15px;
+  }
+  header .handelbay-navbar-collapse ul.handelbay-navbar-left > li > a {
+    padding: 15px 10px;
+  }
+  header .handelbay-navbar-collapse ul.handelbay-navbar-right li a {
+    top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #modal-demo .modal-dialog {
+    width: 900px;
+  }
+}
+
+@media (max-width: 480px) {
+  #because-handelbay .image-1 .handelbay-effect-hover .title {
+    font-size: 14px;
+  }
+  #because-handelbay .image-1 .handelbay-effect-hover p {
+    font-size: 12px;
+  }
+  #handelbay-innovative,
+  #tarifas,
+  #immerse,
+  #we_cant_to_coneect {
+    padding-top: 4em;
+  }
+  #items-handelbay ul li {
+    width: 100%;
+  }
+  #items-handelbay ul.nav-tabs li:first-child::after {
+    content: "";
+  }
+  /* Tarifas*/
+  #tarifas
+    .handelbay-content-planes
+    .row-handelbay-plannes
+    .col-plan-handelbay-1 {
+    width: 48%;
+  }
+  #tarifas
+    .handelbay-content-planes
+    .row-handelbay-plannes
+    .col-plan-handelbay-1
+    .item
+    h2 {
+    font-size: 25px;
+  }
+  #tarifas .row-handelbay-plannes .btn-handelbay-planes {
+    font-size: 10px;
+  }
+  #tarifas .tabs-handelbay-planes ul li {
+    width: 100%;
+  }
+  /* Handelbay Tradicional*/
+  #traditional-handelbay .btn-handelbay-success,
+  #do-no-wait-for-time .btn-handelbay-success {
+    margin-bottom: 20px;
+  }
+  #traditional-handelbay .btn-handelbay-black,
+  #do-no-wait-for-time .btn-handelbay-black {
+    margin-left: 0;
+  }
+  .handelbay-tradicional-content .handelbay-progress .text-left-handelbay {
+    font-family: "Gotham-Bold";
+  }
+  #handelbay-background-curva,
+  #optimize-time {
+    background-size: cover;
+  }
+  /* end Handelbay tradicional */
+  #free-trial {
+    padding: 3em 0 8em 0;
+  }
+  /* end Tarifas*/
+  #ignite .tecno-ignite {
+    margin-bottom: 0px;
+    margin-top: 0;
+  }
+  #ignite {
+    margin-top: 3em;
+  }
+  #modal-demo .modal-body {
+    padding: 0 15px;
+  }
+  #modal-demo .equipo p {
+    padding: 20px 0;
+  }
+  #modal-demo .img-profile img {
+    height: 200px;
+  }
+  #modal-demo .modal-body .col-xs-2,
+  #modal-demo .modal-body .col-xs-10 {
+    width: 100%;
+  }
+  #benefits .col-xs-6,
+  #tarifas .tabs-handelbay-planes ul li,
+  #items-handelbay .tabs-handelbay-planes ul li {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  #we_cant_to_coneect {
+    min-height: 400px;
+  }
+  #handelbay_optimizes {
+    min-height: 450px;
+  }
+  #handelbay_optimizes .title-footer {
+    margin: 0;
+  }
+  /* Footer */
+  footer .handelbay-form-subscribe .title > h1 {
+    padding: 0;
+    border-left: 0;
+    font-size: 35px;
+  }
+  /* end Footer */
+}

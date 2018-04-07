@@ -18,6 +18,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link href="css/handelbay_landing.css" rel="stylesheet" type="text/css">
+    <link href="css/medias.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -118,7 +119,7 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right handelbay-navbar-right">
                             <li class="active">
-                                <a href="prueba_gratis.html">Pruébalo gratis</a>
+                                <a href="prueba_gratis.html">Acerca de</a>
                             </li>
                             <li>
                                 <a href="#">Ingresar</a>
@@ -176,24 +177,27 @@
     <!-- HANDELBAY ITEMS -->
     <section id="items-handelbay">
         <div class="">
-
-            <div class="text-center">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active">
-                        <a href="#Abastecimiento" aria-controls="Abastecimiento" role="tab" data-toggle="tab">Abastecimiento
-                            <span></span>
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#gestion_comercial" aria-controls="gestion_comercial" role="tab" data-toggle="tab">Gestión comercial y ventas
-                            <span></span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-10 col-md-offset-2 col-sm-offset-1">
+                        <div class="text-center tabs-handelbay-planes">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#Abastecimiento" aria-controls="Abastecimiento" role="tab" data-toggle="tab">Abastecimiento
+                                        <span></span>
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#gestion_comercial" aria-controls="gestion_comercial" role="tab" data-toggle="tab">Gestión comercial y ventas
+                                        <span></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>            
             </div>
-
-
             <!-- Tab panes -->
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="Abastecimiento">
@@ -213,7 +217,7 @@
                                     </p>
                                 </div>
                                 <div class="handelbay-tradicional-title text-center">
-                                    <h4>Handelbay | Tradicional
+                                    <h4>Handelbay |vs| Tradicional
                                         <span class="line-left"></span>
                                         <span class="line-right"></span>
                                     </h4>
@@ -1005,21 +1009,5 @@
     }
     </script>
 
-    <script>
-        $(function () {
-
-            //Activar el menu
-            var url = window.location.pathname,
-                urlRegExp = new RegExp(url.replace(/\/$/, '') + "$"); // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
-            // now grab every link from the navigation
-            $('.handelbay-navbar-left a').each(function () {
-                // and test its normalized href against the url pathname regexp
-                if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
-                    $(this).parent().addClass('active');
-                }
-            });
-            // end activar menu
-
-        });
-    </script>
+    <script src="js/functions.js"></script>
 </body>

@@ -18,7 +18,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link href="css/handelbay_landing.css" rel="stylesheet" type="text/css">
-
+    <link href="css/medias.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -118,7 +118,7 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right handelbay-navbar-right">
                             <li class="active">
-                                <a href="prueba_gratis.html">Pruébalo gratis</a>
+                                <a href="prueba_gratis.html">Acerca de</a>
                             </li>
                             <li>
                                 <a href="#">Ingresar</a>
@@ -146,7 +146,7 @@
                         <span class="handelbay-active"></span>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-3 hidden-sm img-header col-md-offset-1 col-sm-offset-1">
+                <div class="col-md-3 col-sm-3 hidden-xs img-header col-md-offset-1 col-sm-offset-1">
                     <img src="images/handelbay_img/handelbay_tarifas_header.png" alt="Tarifas y costos">
                 </div>
             </div>
@@ -1087,58 +1087,5 @@
         }
     }
     </script>
-
-    <script>
-
-        function getMaxOfArray(numArray) {
-            return Math.max.apply(null, numArray);
-        }
-
-        $("#buyer-row .col-plan-handelbay-1").on("click", function () {
-            $('#buyer-row .col-plan-handelbay-1').removeClass('active');
-            $(this).addClass('active');
-        });
-
-        $("#provider-row .col-plan-handelbay-1").on("click", function () {
-            $('#provider-row .col-plan-handelbay-1').removeClass('active');
-            $(this).addClass('active');
-        });
-
-        $(function () {
-
-            //Activar el menu
-            var url = window.location.pathname,
-                urlRegExp = new RegExp(url.replace(/\/$/, '') + "$"); // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
-            // now grab every link from the navigation
-            $('.handelbay-navbar-left a').each(function () {
-                // and test its normalized href against the url pathname regexp
-                if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
-                    $(this).parent().addClass('active');
-                }
-            });
-            // end activar menu
-
-            let arrayItems = [];
-            $('.more').popover('toggle');
-            $('.more').popover('hide');
-            $('.col-plan-handelbay-1').each(index => {
-                arrayItems.push($('.col-plan-handelbay-1').eq(index).height());
-            });
-            $('.col-plan-handelbay-1').css('min-height', (getMaxOfArray(arrayItems) + 35) + 'px');
-            //Solo un activo checkbox
-            // $('input[type="checkbox"]').on("click", function () {
-            //     $('input[type="checkbox"]').each(index => {
-            //         $('input[type="checkbox"]')[index].checked = false;
-            //     });
-            //     $(this)[0].checked = true;
-            // });
-            $('.btn-time').on("click", function () {
-                $('.btn-time').each(index => {
-                    $('.btn-time').eq(index).removeClass('active');
-                });
-                $(this).addClass('active');
-            });
-        });
-
-    </script>
+    <script src="js/functions.js"></script>
 </body>
