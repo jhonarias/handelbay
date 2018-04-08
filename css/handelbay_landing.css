@@ -156,20 +156,29 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 	left: 0;
 	right: 0;
 }
-
-
 /* HOME */
-
 #immerse {
+	margin-bottom: 40px;
 	background-color: #ffffff;
-	background-image: url("../images/handelbay_img/handelbay_sumergete.png");
+	/* background-image: url("../images/handelbay_img/handelbay_sumergete.png"); */
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-origin: content-box;
-  background-position: calc(100% - 0em) center;
-  margin-bottom: 40px;
+  	background-position: calc(100% - 0em) center;	  
+	position: relative;
+	margin-top: 10em;
 }
-
+#immerse .immerse_background {
+	position: absolute;
+    right: 0;
+    top: -16em;
+}
+#immerse .immerse_background img {
+    width: 55%;
+    object-fit: contain;
+    margin-left: auto;
+    display: block;
+}
 #immerse .handelbay-allows-you {
 	margin: 6em 0 30px 0;
 }
@@ -359,7 +368,8 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 #handelbay-innovative,
 #tarifas,
 #terms-conditions,
-#we_cant_to_coneect {
+#we_cant_to_coneect,
+#buyers {
 	padding: 7em 0 0px 0;
 }
 
@@ -367,7 +377,9 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 #free-trial .title>h1.title-1,
 #tarifas .title>h1.title-1,
 #terms-conditions .title>h1.title-1,
-#we_cant_to_coneect .title>h1.title-1 {
+#we_cant_to_coneect .title>h1.title-1,
+#buyers .title>h1.title-1,
+#optimize_your_purchases .title>h1.title-1 {
 	margin-bottom: 0;
 	font-size: 32px;
 	color: #152a3f;
@@ -395,7 +407,9 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 #do-no-wait-for-time .title>h1.title-2,
 #we_cant_to_coneect .title>h1.title-2,
 #why_handelbay .title>h1.title-2,
-#handelbay_optimizes .title>h1.title-2 {
+#handelbay_optimizes .title>h1.title-2,
+#buyers .title>h1.title-2,
+#optimize_your_purchases .title>h1.title-2 {
 	color: #152a3f;
 	font-family: "Gotham-Bold";
 	font-size: 32px;
@@ -416,7 +430,8 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 #do-no-wait-for-time .title>span.handelbay-active,
 #we_cant_to_coneect .title>span.handelbay-active,
 #why_handelbay .title>span.handelbay-active,
-#handelbay_optimizes .title>span.handelbay-active {
+#handelbay_optimizes .title>span.handelbay-active,
+#buyers .title>span.handelbay-active {
 	background-color: #30e7a3;
 	width: 30px;
 	height: 10px;
@@ -432,7 +447,9 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 #what_do_we_do .handelbay-text p:first-child,
 #immerse .handelbay-text p:first-child,
 #do-no-wait-for-time .handelbay-text p:first-child,
-#why_handelbay .handelbay-text p:first-child {
+#why_handelbay .handelbay-text p:first-child,
+#buyers .handelbay-text p:first-child,
+#optimize_your_purchases .handelbay-text p:first-child {
 	margin: 15px 0 25px 0;
 }
 
@@ -449,7 +466,7 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 	background-size: cover;
 }
 
-#handelbay-background-curva {
+.top-backogrund-curva {
 	margin-top: -43px;
 }
 
@@ -800,7 +817,7 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 #traditional-handelbay .title-footer h3 {
 	font-family: "Gotham-Bold";
 	color: #30e7a3;
-	margin: 30px 0;
+	margin: 30px 0 46px 0;
 	font-style: italic;
 }
 
@@ -1266,7 +1283,9 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 	opacity: 0.7;
 }
 
-#tarifas .title-footer h3 {
+#tarifas .title-footer h3, 
+#ready_to_innovate .title-footer h3,
+#optimize_your_purchases .title-footer h3{
 	margin: 30px 0 46px 0;
 	font-family: "Gotham-Bold";
 	font-style: italic;
@@ -1638,7 +1657,7 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 #ignite .no-border-ignite .tecno-ignite h1 {
 	border-right: 0;
 }
-
+/*  == END IGNITE == */
 #we_cant_to_coneect {
 	background-image: url(../images/handelbay_img/handelbay_mundo.png);
 	background-repeat: no-repeat;
@@ -1700,13 +1719,114 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 #handelbay_optimizes .image_home_top img {
 	width: 100%;
 }
-
-
-/*  == END IGNITE == */
-
-
+/* == Compradores == */
+#buyers {
+	padding-bottom: 40px;
+}
+#buyers .computers{
+	margin-top: 0 ;
+	text-align: center;
+}
+#buyers .computers > img{
+	width: 242px;
+    object-fit: contain;
+    height: 407px;
+}
+#buyers .title-footer{
+	margin-bottom: 30px;
+}
+/* == End Compradores == */
+/* == Ahorros en las compras == */
+#savings_in_purchases, #compare_quotes, #optimize_your_purchases {
+	background-color: #ebeff2;
+	padding-top: 30px;
+}
+#savings_in_purchases .title, #compare_quotes .title, #compare_quotes .info_title {
+	margin-bottom: 0;	
+	font-family: "Gotham-Bold";
+}
+#savings_in_purchases .space-title, #compare_quotes .space-title {
+	margin-top: 30px;
+}
+#savings_in_purchases .img_man img, 
+#expansion_network .brand img, 
+#compare_quotes .brand img {
+	width: 100%;
+}
+#savings_in_purchases .text {
+	color: #304356;
+	margin-bottom: 20px;
+}
+/* == End Ahorros en las compras == */
+/* == Red de expansión == */
+#expansion_network {
+	background-color: #30e7a3;	
+	padding: 50px 0;
+}
+#expansion_network .row {
+	display: flex;
+	align-items: center;	
+}
+#expansion_network .title {
+	margin-bottom: 0;	
+	font-family: "Gotham-Bold";
+	color: #fff;
+}
+#expansion_network .text {
+	color: #fff;
+	margin-bottom: 20px;
+}
+/* == End Red de expansión == */
+/*  == Ahorros en las compras == */
+#compare_quotes .row{
+	display: flex;
+	align-items: center;
+}
+/*  == End Ahorros en las compras == */
+/** == Listo para innovar== **/
+#ready_to_innovate {
+	padding-bottom: 30px;
+}
+/** == End Listo para innovar == **/
+/** == Optimiza tus compras == **/
+#optimize_your_purchases {
+	padding-bottom: 30px;
+}
+#optimize_your_purchases .handelbay-text p {
+	margin-bottom: 0 !important;
+}
+#optimize_your_purchases .img_buyers img {
+	width: 100%;
+}
+#optimize_your_purchases .title_content .title {		
+	display: inline-block;
+	margin-bottom: 80px;
+	padding-bottom: 20px;
+    padding-right: 60px;
+	padding-left: 60px;	
+	font-family: "Gotham-Bold";
+	font-size: 22px;
+	text-transform: uppercase;
+    border-bottom: 2px solid #30e7a3;   
+	position: relative;
+}
+#optimize_your_purchases .title_content .title i {
+	position: absolute;
+    bottom: -21px;
+    right: -14px;
+    font-size: 40px;
+    color: #30e7a3;
+}
+#optimize_your_purchases .title-footer h4 {
+	margin-top: 30px;
+}
+#optimize_your_purchases .title-footer .subtitle {	
+	font-family: "Gotham-Bold";    
+	color: #152a3f;   
+	text-decoration: underline; 
+}
+/** == End Oṕtimiza tus compras == **/
 /* == FOOTER == */
-
 footer {
 	background-image: url("../images/handelbay_img/handelbay_fondo_footer.png");
 	background-repeat: no-repeat;
