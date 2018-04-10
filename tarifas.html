@@ -95,7 +95,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">Proveedores
+                                <a href="proveedores.html">Proveedores
                                     <span class="han-sr-only"></span>
                                 </a>
                             </li>
@@ -721,7 +721,7 @@
                             <!-- Aún no decides-->
                             <div class="title-footer text-center">
                                 <h3>¿Aún no decides cuál es el mejor plan para tu empresa?</h3>
-                                <a href="#" class="btn btn-handelbay-success btn-handelbay-black">¡Ve a la comparación de planes y elige!</a>
+                                <a href="#" class="btn btn-handelbay-success btn-handelbay-black" data-toggle="modal" data-target="#compare-planes">¡Ve a la comparación de planes y elige!</a>
                             </div>
                             <!-- end Aún no decides-->
                         </div>
@@ -916,6 +916,136 @@
         <!-- .container -->
     </section>
     <!-- END BECAUSE HANDELBAY -->
+
+    <!-- Modal comparador de planes-->
+    <div class="modal fade handelbay-modal" id="compare-planes" tabindex="-1" role="dialog" aria-labelledby="compare-planesLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div id="agendatudemo">
+                    <div class="modal-header text-center">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button> -->
+                        <h3 class="modal-title" id="compare-planesLabel">Comparador de planes</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="title-body modal_tabs">
+                            <div class="tabs-handelbay-planes text-center">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="buyer">
+                                        <a href="#buyerM" aria-controls="buyerM" role="tab" data-toggle="tab">Comprador</a>
+                                    </li>
+                                    <li role="presentation" class="active dual">
+                                        <a href="#dualM" aria-controls="dualM" role="tab" data-toggle="tab">Dual</a>
+                                    </li> 
+                                    <li role="presentation" class="provider">
+                                        <a href="#providerM" aria-controls="providerM" role="tab" data-toggle="tab">Proveedor</a>
+                                    </li>                                                                       
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="planes_users">
+                            <div class="plan free">
+                                <h3 class="title">Free</h3>
+                                <span class="text">2 usuarios</span>
+                            </div>
+                            <div class="plan">
+                                <h3 class="title">Basic</h3>
+                                <span class="text">4 usuarios</span>
+                            </div>
+                            <div class="plan">
+                                <h3 class="title">Team</h3>
+                                <span class="text">8 usuarios</span>
+                            </div>
+                            <div class="plan">
+                                <h3 class="title">Enterprise</h3>
+                                <span class="text">Usuarios ilimi.</span>
+                            </div>
+                            <div class="plan">
+                                <h3 class="title">Elite</h3>
+                                <span class="text">Usuarios ilimi.</span>
+                            </div>
+                        </div> <!-- .planes_users -->
+                        <table class="table_price table">
+                            <tbody>
+                                <tr>
+                                    <th colspan="6" class="title">
+                                        Precio
+                                    </th>
+                                    <td rowspan="4" class="more">+</td>
+                                </tr>
+                                <tr class="tr-body">
+                                    <th class="subtitle">
+                                        Mensual
+                                    </th>
+                                    <td>
+                                        117.500
+                                    </td>
+                                    <td>
+                                        117.500
+                                    </td>
+                                    <td>
+                                        117.500
+                                    </td>
+                                    <td>
+                                        117.500
+                                    </td>
+                                    <td>
+                                        117.500
+                                    </td>                                   
+                                </tr>
+                                <tr class="tr-body">
+                                    <th class="subtitle">
+                                        Semestral
+                                    </th>
+                                    <td>
+                                        109.900
+                                    </td>
+                                    <td>
+                                        109.900
+                                    </td>
+                                    <td>
+                                        109.900
+                                    </td>
+                                    <td>
+                                        109.900
+                                    </td>
+                                    <td>
+                                        109.900
+                                    </td>                                   
+                                </tr>
+                                <tr class="tr-body">
+                                    <th class="subtitle">
+                                        Anual
+                                    </th>
+                                    <td>
+                                        99.900
+                                    </td>
+                                    <td>
+                                        99.900
+                                    </td>
+                                    <td>
+                                        99.900
+                                    </td>
+                                    <td>
+                                        99.900
+                                    </td>
+                                    <td>
+                                        99.900
+                                    </td>                                                            
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                    </div>
+                    <!-- end primera parte  -->
+                </div>                
+            </div>
+            <!-- .modal-content -->
+        </div>
+    </div>
+    <!-- END MODAL AGENDA TU DEMO AHORA -->
 
     <!-- FOOTER -->
     <footer>

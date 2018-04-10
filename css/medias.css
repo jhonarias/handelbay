@@ -5,6 +5,9 @@
   #tarifas .img-header img {
     top: 30px;
   }
+  #buyers .computers {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 1024px) and (min-width: 992px) {
   #tarifas
@@ -12,7 +15,7 @@
     .row-handelbay-plannes
     .col-plan-handelbay-1 {
     width: 23%;
-  }
+  }   
 }
 @media (min-width: 1366px) {
   section, footer {
@@ -206,6 +209,12 @@
   #buyers .title-footer {
     text-align: center;
   }
+  #savings_in_purchases.savings_in_purchases .row {
+    display: block;
+  }
+  #buyers .computers {
+    margin-top: 20px;
+  }
   /* Footer */
   footer .handelbay-form-subscribe {
     padding-bottom: 0;
@@ -233,7 +242,7 @@
   }
 }
 @media (min-width: 768px) {
-  #modal-demo .modal-dialog {
+  .handelbay-modal .modal-dialog {
     width: 900px;
   }
 }
@@ -305,17 +314,17 @@
   #ignite {
     margin-top: 3em;
   }
-  #modal-demo .modal-body {
+  .handelbay-modal .modal-body {
     padding: 0 15px;
   }
-  #modal-demo .equipo p {
+  .handelbay-modal .equipo p {
     padding: 20px 0;
   }
-  #modal-demo .img-profile img {
+  .handelbay-modal .img-profile img {
     height: 200px;
   }
-  #modal-demo .modal-body .col-xs-2,
-  #modal-demo .modal-body .col-xs-10 {
+  .handelbay-modal .modal-body .col-xs-2,
+  .handelbay-modal .modal-body .col-xs-10 {
     width: 100%;
   }
   #benefits .col-xs-6,
