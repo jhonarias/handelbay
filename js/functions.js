@@ -79,5 +79,11 @@ $(function () {
             $('.btn-time').eq(index).removeClass('active');
         });
         $(this).addClass('active');
-    });                       
+    });    
+    //More table
+    $('.table_price .more').on('click', function() {
+        $(this).css('width', '35px');        
+        $(this).parent().siblings().attr('style')  == 'display: none;' ? $(this).attr('rowspan', '4').text('-') : $(this).attr('rowspan', '').text('+');
+        $(this).parent().siblings().toggle();
+    })    
 });

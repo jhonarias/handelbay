@@ -265,15 +265,21 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 	font-family: "Gotham-Bold";
 	margin-bottom: 30px;
 }
-
 #optimize-time a.btn-handelbay-write,
 #optimize-time-video a.btn-handelbay-write {
+	display: flex;
+    align-items: center;
 	background-color: #ffffff;
 	color: #30e7a3;
 	padding: 8px 22px;
 	margin-top: 20px;
 }
-
+#optimize-time a.btn-handelbay-write {
+	width: 182px;
+}
+#optimize-time-video a.btn-handelbay-write {
+	width: 219px;
+}
 #optimize-time a.btn-handelbay-write:hover,
 #optimize-time-video a.btn-handelbay-write:hover {
 	background-color: #152a3f;
@@ -804,12 +810,13 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 	box-shadow: -1px 5px 17px -6px rgba(0, 0, 0, 0.65);
 }
 .btn-handelbay-success:hover,
-#frequent-questions .btn-questions:hover,
 .btn-handelbay-info:hover {
 	opacity: 0.7;
 	color: #ffffff;
 }
-
+.btn-questions:hover {
+	opacity: 0.7;
+}
 .btn-handelbay-black:hover {
 	background-color: #94a9c6 !important;
 }
@@ -1237,18 +1244,17 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 	margin: 0 5px;
 }
 .tabs-handelbay-planes ul li a {
-	text-transform: none;
+	text-transform: uppercase;
 }
-.tabs-handelbay-planes ul li.active a {
+.tabs-handelbay-planes ul li.active>a {
 	font-family: "Gotham-Bold";
 	color: #f4f8fb !important;
-	border-radius: 40px;
 	padding: 5px 65px;
 	border: 0;
 }
 .tabs-handelbay-planes ul li a:hover {
 	background-color: #152a3f;
-	color: #ffffff !important;
+	color: #ffffff !important;	
 }
 .tabs-handelbay-planes ul li.active a[href="#buyer"],
 .tabs-handelbay-planes ul li.active a[href="#buyerM"],
@@ -1266,12 +1272,11 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 	background-color: #7360bc;
 }
 .tabs-handelbay-planes ul li:not(.active) a:hover {
-	border-radius: 40px;
-	padding: 5px 30px;
-	opacity: 0.7;
 	color: #f4f8fb;
 	font-family: "Gotham-Bold";
-	border: 0;
+}
+#items-handelbay .tabs-handelbay-planes li.active a {
+	background-color: #152a3f;
 }
 #tarifas .button-footer-plan a {
 	text-transform: uppercase;
@@ -1580,8 +1585,8 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 	font-size: 18px;
 	line-height: normal;
 	color: #152a3f;
+	
 }
-
 #excelente,
 #download {
 	margin-top: 60px;
@@ -1589,6 +1594,24 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 .modal_tabs .nav-tabs{
 	margin: 20px 0;
     vertical-align: middle;
+}
+.modal_tabs .tabs-handelbay-planes ul li a {
+	padding: 1px 30px;
+}
+.buttons-modal {
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.buttons-modal a {
+	margin: 0 5px;
+}
+#agendatudemo .buttons-modal a:first-child {
+	background: transparent;
+    color: #30de9a;
+    border: 1px solid #30de9a;    
+}
+.modal_tabs .buttons-modal .btn-handelbay-success {
+	margin: 0 15px;
 }
 .planes_users {
 	display: flex;
@@ -1625,6 +1648,11 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 .table_price {
 	margin: 10px 0 20px 0px;
 	border: 1px solid #c3c3c3;
+	background: rgb(243,246,251);
+}
+.table_price tbody>tr>td.more{
+	border-left: 1px solid #c3c3c3 !important;
+	text-align: center;
 }
 .table_price tr .title {
 	text-transform: uppercase;
@@ -1637,6 +1665,7 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 	padding-top: 15px;
 }
 .table_price tr .more {
+	width: 35px;
 	vertical-align: middle;
 	color: #30e7a3;
 	cursor: pointer;
@@ -1644,17 +1673,28 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 .table_price tr .subtitle {
 	color: #667686;
 	font-style: italic;
-	font-size: 16px;
+	font-size: 14px;
 } 
 .table_price tr:last-child td{
 	padding-bottom: 15px;
 }
+.table_price tr:last-child td, .table_price tr:last-child th{
+	border-bottom: 1px solid #c3c3c3 !important;
+	padding-bottom: 24px;
+}
+.table_price tr td .point {
+	border-radius: 100%;
+    background: #30e7a3;
+    padding: 4px 4px;
+    display: inline-block;
+}
 .table_price .tr-body {
-	/* display: flex; */
+	display: flex;
 	justify-content: center;
 }
 .table_price .tr-body th {
-	flex-basis: 28.2857%;	
+	flex-basis: 28.2857%;
+	font-weight: normal;	
 	padding-left: 40px;	
 	padding-top: 0;
 	padding-bottom: 0;
@@ -1663,7 +1703,7 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 .table_price .tr-body td {
 	flex-basis: 14.2857%;
 	color: #30de9a;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
 	font-style: italic;
 	padding-top: 0;
@@ -1672,6 +1712,42 @@ header .handelbay-navbar-collapse ul.handelbay-navbar-left>li>a.logo-handelbay-i
 }
 .table_price tr td, .table_price tr th {
 	border: 0 !important;
+}
+#dualM .title {
+	font-family: "Gotham-Bold";
+    color: #152a3f;
+    margin-bottom: 20px;
+    margin-top: 22px;
+}
+#dualM .text {
+	margin-bottom: 35px;
+    color: #1d3246;
+}
+#dualM .plan_txt {
+	color: #7360bc;
+    font-family: "Gotham-Bold";
+    text-transform: uppercase;
+}
+#dualM .plan_text1 {	
+    margin-bottom: 30px;
+}
+#dualM .plan_text2 {	
+	margin-top: 30px;
+}
+#dualM .more {
+	color: #7360bc;
+	font-weight: bold;
+	cursor: pointer;
+} 
+#dualM .buttons-modal {
+	margin-top: 45px;
+}
+#dualM .buttons-modal a:first-child {
+	border: 1px solid #7360bc;
+	color: #7360bc;	
+}
+#dualM .buttons-modal a:last-child {
+	background-color: #7360bc;
 }
 /* == END MODALES == */
 

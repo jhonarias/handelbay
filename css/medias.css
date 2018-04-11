@@ -283,7 +283,7 @@
   #tarifas .row-handelbay-plannes .btn-handelbay-planes {
     font-size: 10px;
   }
-  #tarifas .tabs-handelbay-planes ul li {
+  .tabs-handelbay-planes ul li {
     width: 100%;
   }
   /* Handelbay Tradicional*/
@@ -328,8 +328,7 @@
     width: 100%;
   }
   #benefits .col-xs-6,
-  #tarifas .tabs-handelbay-planes ul li,
-  #items-handelbay .tabs-handelbay-planes ul li {
+  .tabs-handelbay-planes ul li{
     width: 100%;
     margin-bottom: 15px;
   }
