@@ -215,6 +215,9 @@
   #buyers .computers {
     margin-top: 20px;
   }
+  #traditional-handelbay .handelbay_img_tradicional {
+    padding: 0;
+  }
   /* Footer */
   footer .handelbay-form-subscribe {
     padding-bottom: 0;
