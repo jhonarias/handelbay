@@ -79,6 +79,9 @@
     flex-basis: 25%;
     padding: 15px 10px;
   }
+  #ignite .tecno-ignite h1{
+    font-size: 28px;
+  }
 }
 @media (max-width: 768px) {
   header .navbar-default {
@@ -188,8 +191,8 @@
     background-position: calc(100% - -18em) center;
   }
   #with-support-from {
-    background-size: 100% 100%;
-    background-position: center 54px;
+    background-size: cover;
+    background-position: center;
   }
   #with-support-from .btn--handelbay {
     margin-top: 6em;
@@ -216,46 +219,21 @@
   }  
   #buyers .title-footer {
     text-align: center;
-  }
-  #savings_in_purchases.savings_in_purchases .row {
-    display: block;
-  }
+  } 
   #buyers .computers {
     margin-top: 20px;
   }
   #traditional-handelbay .handelbay_img_tradicional {
     padding: 0;
   }
-  /* table.table_price {
-    border: 0;
+  #handelbay_optimizes {
+    background-position-y: 0;
   }
-  table.table_price tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: .625em;
-  }  
-  table.table_price tr.tr-body {
-    display: block;
+  #terms-conditions .handelbay-text .content-text {
+    background-position: center;
+    background-size: cover;
   }
-  table.table_price tbody > tr > td.more {
-    width: 100%;
-  }
-  table.table_price td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: .8em;
-    text-align: right;
-  }
-  table.table_price td::before {
    
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  table.table_price td:last-child {
-    border-bottom: 0;
-  } */
   /* Footer */
   footer .handelbay-form-subscribe {
     padding-bottom: 0;
@@ -285,6 +263,9 @@
 @media (min-width: 768px) {
   .handelbay-modal .modal-dialog {
     width: 900px;
+  }
+  .no-margin-left {
+    margin-left: 0 !important;
   }
 }
 @media (max-width: 480px) {
@@ -383,13 +364,22 @@
   #immerse {
     margin-top: -50px;
   }
-  #expansion_network .row, #compare_quotes .row {
-    display: block;
-  }
   .respaldo_logos .brand {
     flex-basis: 33.3333%;
     padding: 15px 10px;
   }
+  #expansion_network .row, #compare_quotes .row, #savings_in_purchases .row {
+    display: block;
+  }
+  #free-trial .handelbay-text p:first-child {
+    background: white;
+  }
+  .handelbay-tradicional-content {
+    background-size: contain;
+  }
+  #what_do_we_do {
+    background-image: unset;
+  }  
   /* Footer */
   footer .handelbay-form-subscribe .title > h1 {
     padding: 0;

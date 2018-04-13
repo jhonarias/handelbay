@@ -35,10 +35,6 @@ body {
   font-style: normal;
 }
 
-.no-margin-left {
-  margin-left: 0 !important;
-}
-
 /* == HEADER == */
 
 header .navbar-default {
@@ -315,8 +311,7 @@ header
 
 #benefits .btn-footer a.btn-handelbay-success {
   white-space: inherit !important;
-  padding: 7px 35px !important;
-  margin-left: 0 !important;
+  padding: 7px 35px !important;  
 }
 
 #link-company {
@@ -1142,6 +1137,7 @@ header
   color: #f4f8fb;
   border-radius: 30px;
   padding: 15px 35px;
+  margin: 0 15px 15px 15px;
   font-size: 14px;
   font-family: "Gotham-Bold";
   white-space: pre-line;
@@ -1154,6 +1150,7 @@ header
   color: #f4f8fb;
   border-radius: 30px;
   padding: 15px 35px;
+  margin: 0 15px 15px 15px;
   font-size: 14px;
   font-family: "Gotham-Bold";
   white-space: pre-line;
@@ -1206,7 +1203,7 @@ header
 
 .btn-handelbay-black.btn-handelbay-black {
   background-color: #152a3f;
-  margin-left: 15px;
+  /* margin-left: 15px; */
 }
 
 #carousel-handelbay-tradicional .left.carousel-control,
@@ -1782,11 +1779,12 @@ header
 /* == PRUEBA GRATIS == */
 
 #free-trial {
+  padding: 5em 0 10em 0;
   background-image: url("../images/handelbay_img/handelbay_fondo_prueba_gratis.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 5em 0 10em 0;
+  background-size: 100% 100%; 
   background-position: center;
+  background-color: #f2f6f9;
 }
 
 #free-trial .btn-handelbay-black {
@@ -1798,7 +1796,7 @@ header
 /* == PREGUNTAS FRECUENTES == */
 
 #frequent-questions {
-  background-color: #f4f8fb;
+  background-color: #f2f6f9;
   padding-bottom: 10px;
 }
 
@@ -2359,6 +2357,7 @@ header
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-position-y: -35px;
   min-height: 655px;
   background-color: rgba(35, 199, 130, 1);
   background-color: -moz-linear-gradient(

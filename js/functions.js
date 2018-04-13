@@ -14,15 +14,15 @@ $(document).ready(function() {
   // end activar menu
 
   // Para que los items cojan el mismo tamaño
-  let arrayItems = [];
-  $(".tecno-ignite").each(index => {
-    arrayItems.push(
-      $(".tecno-ignite")
-        .eq(index)
-        .height()
-    );
-  });
-  $(".tecno-ignite").css("min-height", getMaxOfArray(arrayItems) + 25 + "px");
+  // let arrayItems = [];
+  // $(".tecno-ignite").each(index => {
+  //   arrayItems.push(
+  //     $(".tecno-ignite")
+  //       .eq(index)
+  //       .height()
+  //   );
+  // });
+  // $(".tecno-ignite").css("min-height", getMaxOfArray(arrayItems) + 25 + "px");
 
   // Para que los planes cojan el mismo tamaño
   let arrayItemsPlan = [];
