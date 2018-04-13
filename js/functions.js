@@ -1,53 +1,4 @@
-function getMaxOfArray(numArray) {
-  return Math.max.apply(null, numArray);
-}
-
-// Agregar y no la clase active a los planes
-$("#buyer-row .col-plan-handelbay-1").on("click", function() {
-  $("#buyer-row .col-plan-handelbay-1").removeClass("active");
-  $(this).addClass("active");
-});
-
-$("#provider-row .col-plan-handelbay-1").on("click", function() {
-  $("#provider-row .col-plan-handelbay-1").removeClass("active");
-  $(this).addClass("active");
-});
-
-// Fuction para mostrar el video y ocultarlo
-function showEmbed(x) {
-  if (x == 0) {
-    $("#optimize-time-video").show();
-    $("#optimize-time").hide();
-    $(".embed-optimize iframe").attr(
-      "src",
-      "https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=1"
-    );
-  } else {
-    $("#optimize-time-video").hide();
-    $("#optimize-time").show();
-    $(".embed-optimize iframe").attr(
-      "src",
-      "https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=0"
-    );
-  }
-}
-
-//Submit del formulario agenda tu demo
-function agendaDemo() {
-  $("#excelente").show();
-  $("#modal-demo").animate({ scrollTop: $("#excelente").offset().top }, "slow");
-}
-
-function backagendaDemo() {
-  $("#excelente").hide();
-  $("#modal-demo").animate(
-    { scrollTop: $("#agendatudemo").offset().top },
-    "slow"
-  );
-}
-
-$(document).ready(function() {
-    alert('ssss');
+$(document).ready(function() {    
   //Activar el menu
   var url = window.location.pathname,
     urlRegExp = new RegExp(url.replace(/\/$/, "") + "$"); // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
@@ -122,3 +73,53 @@ $(document).ready(function() {
       .toggle();
   });
 });
+
+
+function getMaxOfArray(numArray) {
+  return Math.max.apply(null, numArray);
+}
+
+// Agregar y no la clase active a los planes
+$("#buyer-row .col-plan-handelbay-1").on("click", function() {
+  $("#buyer-row .col-plan-handelbay-1").removeClass("active");
+  $(this).addClass("active");
+});
+
+$("#provider-row .col-plan-handelbay-1").on("click", function() {
+  $("#provider-row .col-plan-handelbay-1").removeClass("active");
+  $(this).addClass("active");
+});
+
+// Fuction para mostrar el video y ocultarlo
+function showEmbed(x) {
+  if (x == 0) {
+    $("#optimize-time-video").show();
+    $("#optimize-time").hide();
+    $(".embed-optimize iframe").attr(
+      "src",
+      "https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=1"
+    );
+  } else {
+    $("#optimize-time-video").hide();
+    $("#optimize-time").show();
+    $(".embed-optimize iframe").attr(
+      "src",
+      "https://www.youtube.com/embed/If5O5Q0zX_Y?rel=0&autoplay=0"
+    );
+  }
+}
+
+//Submit del formulario agenda tu demo
+function agendaDemo() {
+  $("#excelente").show();
+  $("#modal-demo").animate({ scrollTop: $("#excelente").offset().top }, "slow");
+}
+
+function backagendaDemo() {
+  $("#excelente").hide();
+  $("#modal-demo").animate(
+    { scrollTop: $("#agendatudemo").offset().top },
+    "slow"
+  );
+}
+
