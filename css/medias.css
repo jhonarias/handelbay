@@ -226,6 +226,36 @@
   #traditional-handelbay .handelbay_img_tradicional {
     padding: 0;
   }
+  /* table.table_price {
+    border: 0;
+  }
+  table.table_price tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }  
+  table.table_price tr.tr-body {
+    display: block;
+  }
+  table.table_price tbody > tr > td.more {
+    width: 100%;
+  }
+  table.table_price td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  table.table_price td::before {
+   
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table.table_price td:last-child {
+    border-bottom: 0;
+  } */
   /* Footer */
   footer .handelbay-form-subscribe {
     padding-bottom: 0;
