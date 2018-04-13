@@ -233,6 +233,12 @@
     background-position: center;
     background-size: cover;
   }
+
+  #expansion_network .row, 
+  #compare_quotes .row, 
+  #savings_in_purchases .row {
+    display: block;
+  }
    
   /* Footer */
   footer .handelbay-form-subscribe {
@@ -267,6 +273,9 @@
   .no-margin-left {
     margin-left: 0 !important;
   }
+}
+@media (max-width: 690px) {
+  
 }
 @media (max-width: 480px) {
   #because-handelbay .image-1 .handelbay-effect-hover .title {
@@ -313,10 +322,10 @@
   #do-no-wait-for-time .btn-handelbay-success {
     margin-bottom: 20px;
   }
-  #traditional-handelbay .btn-handelbay-black,
+  /* #traditional-handelbay .btn-handelbay-black,
   #do-no-wait-for-time .btn-handelbay-black {
     margin-left: 0;
-  }
+  } */
   .handelbay-tradicional-content .handelbay-progress .text-left-handelbay {
     font-family: "Gotham-Bold";
   }
@@ -367,10 +376,7 @@
   .respaldo_logos .brand {
     flex-basis: 33.3333%;
     padding: 15px 10px;
-  }
-  #expansion_network .row, #compare_quotes .row, #savings_in_purchases .row {
-    display: block;
-  }
+  }  
   #free-trial .handelbay-text p:first-child {
     background: white;
   }

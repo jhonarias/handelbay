@@ -2051,9 +2051,9 @@ header
   padding-top: 10px;
   padding-bottom: 5px;
 }
-.buttons-modal a {
+/* .buttons-modal a {
   margin: 0 5px;
-}
+} */
 #agendatudemo .buttons-modal a:first-child {
   background: transparent;
   color: #30de9a;
