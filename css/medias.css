@@ -71,6 +71,14 @@
   #immerse .immerse_background {
     top: -9em;
   }
+  .respaldo_logos {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .respaldo_logos .brand {
+    flex-basis: 25%;
+    padding: 15px 10px;
+  }
 }
 @media (max-width: 768px) {
   header .navbar-default {
@@ -347,6 +355,10 @@
   }
   #expansion_network .row, #compare_quotes .row {
     display: block;
+  }
+  .respaldo_logos .brand {
+    flex-basis: 33.3333%;
+    padding: 15px 10px;
   }
   /* Footer */
   footer .handelbay-form-subscribe .title > h1 {
