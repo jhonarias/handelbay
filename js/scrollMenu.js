@@ -20,7 +20,7 @@ $('.navbar-toggle').on("click", function() {
             
 }) 
 
-$(function () {    
+$(document).ready(function() { 
     // Scroll menu cuando se pasa del div .section-top-contend se agrega el id 
     // handelbay-background-prueba-gratis
     $(window).scroll(function (event) {
