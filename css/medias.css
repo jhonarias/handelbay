@@ -239,6 +239,10 @@
   #savings_in_purchases .row {
     display: block;
   }
+
+  .items-handelbay .column {
+    flex-basis: 50%;
+  }
    
   /* Footer */
   footer .handelbay-form-subscribe {
@@ -385,12 +389,18 @@
   }
   #what_do_we_do {
     background-image: unset;
-  }  
+  }
+  .items-handelbay .column {
+    flex-basis: 100%;
+  }   
   /* Footer */
   footer .handelbay-form-subscribe .title > h1 {
     padding: 0;
     border-left: 0;
-    font-size: 35px;
+    font-size: 28px;
+  }
+  footer ul.handelbay-HandelBay li > a {
+    font-size: 14px;
   }
   /* end Footer */
 }
