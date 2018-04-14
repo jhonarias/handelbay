@@ -367,7 +367,10 @@
     width: 100%;
     margin-bottom: 15px;
   }
-  #we_cant_to_coneect, #handelbay_optimizes  {
+  #handelbay_optimizes {
+    min-height: 470px;
+  }
+  #we_cant_to_coneect{
     min-height: 400px;
   }
   #handelbay_optimizes .title-footer {
