@@ -2365,14 +2365,8 @@ header
   margin-top: -16.9em;
 }
 
-#handelbay_optimizes {
-  display: -webkit-box; /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
-  display: -moz-box; /* OLD: Firefox (buggy) */
-  display: -o-box;
-  display: -ms-flexbox; /* MID: IE 10 */
-  display: -webkit-flex; /* NEW, Chrome 21+ */ 
-  align-items: center;
-  display: flex;
+#handelbay_optimizes {  
+  display: table;
   width: 100%;
   background-image: url(../images/handelbay_img/handelbay_image_top.png), linear-gradient(
     to right,
@@ -2386,7 +2380,7 @@ header
   background-size: cover;
   background-position: center;
   /* background-position-y: -35px; */  
-  min-height: 55em;  
+  height: 55em;  
   background-image: url(../images/handelbay_img/handelbay_image_top.png), -moz-linear-gradient(
     left,
     rgba(35, 199, 130, 1) 0%,
@@ -2620,7 +2614,7 @@ header
 .items-handelbay {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .items-handelbay .column {

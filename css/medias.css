@@ -239,7 +239,9 @@
   #savings_in_purchases .row {
     display: block;
   }
-
+  .items-handelbay  {
+    flex-wrap: wrap;
+  }
   .items-handelbay .column {
     flex-basis: 50%;
   }
@@ -368,7 +370,7 @@
     margin-bottom: 15px;
   }
   #handelbay_optimizes {
-    min-height: 470px;
+    height: 470px;
   }
   #we_cant_to_coneect{
     min-height: 400px;
@@ -392,7 +394,7 @@
   }
   #what_do_we_do {
     background-image: unset;
-  }
+  }  
   .items-handelbay .column {
     flex-basis: 100%;
   }   
