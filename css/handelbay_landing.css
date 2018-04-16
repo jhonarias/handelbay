@@ -1228,8 +1228,11 @@ header
 
 .btn-handelbay-black.btn-handelbay-black {
   background-color: #152a3f;
+  outline: none;
 }
-
+.btn-handelbay-black.btn-handelbay-black:focus {
+  color: white;
+}
 #carousel-handelbay-tradicional .left.carousel-control,
 #carousel-handelbay-tradicional .right.carousel-control {
   background: transparent;
@@ -1783,10 +1786,6 @@ header
   font-family: "Gotham-Bold";
   font-style: italic;
   color: #152a3f;
-}
-
-#tarifas .title-footer a.btn-handelbay-black {
-  background-color: #152a3f;
 }
 
 .popover {
