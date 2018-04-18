@@ -399,6 +399,10 @@
     flex-basis: 100%;
   }   
   /* Footer */
+  footer {
+    background-size: cover;
+    background-position: center;
+  }
   footer .handelbay-form-subscribe .title > h1 {
     padding: 0;
     border-left: 0;
